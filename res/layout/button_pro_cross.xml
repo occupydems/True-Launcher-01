@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="96.0dip"
+    android:layout_height="96.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/bg_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/cross_pro_bg"
+        android:contentDescription="@string/enjoy_launcher_pro" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@id/crown_anim"
+        android:layout_width="52.0dip"
+        android:layout_height="52.0dip"
+        android:layout_marginTop="8.0dip"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pro_crown" />
+    <TextView
+        android:textSize="8.0dip"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:text="@string/default_pro_button_text"
+        android:maxLines="2"
+        android:layout_marginHorizontal="4.0dip"
+        app:layout_constraintTop_toBottomOf="@id/crown_anim" />
+</androidx.constraintlayout.widget.ConstraintLayout>

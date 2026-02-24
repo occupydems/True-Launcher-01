@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/new_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/tool_bar"
+        layout="@layout/action_bar_settings" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/txt_icon_pack_warning"
+        android:background="@drawable/background_warn_change_icon"
+        android:padding="16.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="24.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar">
+        <ImageView
+            android:id="@id/icon_warning"
+            android:layout_width="28.5dip"
+            android:layout_height="28.5dip"
+            android:src="@drawable/warning"
+            android:tint="#ffffcc00"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.truelib.settings.custom.TextCustomFont
+            android:textColor="@color/content_3rd"
+            android:id="@id/text_warning"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/not_set_default_pack_warning"
+            android:layout_marginStart="16.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon_warning"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.truelib.settings.custom.TextCustomFont
+            android:textColor="@color/blue_color"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_to_go_to_icon_pack"
+            app:customFont="2"
+            app:layout_constraintEnd_toEndOf="@id/text_warning"
+            app:layout_constraintStart_toStartOf="@id/text_warning"
+            app:layout_constraintTop_toBottomOf="@id/text_warning" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/ryc_list_app"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        android:layout_marginVertical="16.0dip"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/banner_ad_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_icon_pack_warning"
+        app:layout_constraintVertical_bias="0.0" />
+    <com.truelib.settings.common.LoadingView
+        android:id="@id/loading_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:translationZ="5.0dip" />
+    <FrameLayout
+        android:id="@id/banner_ad_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

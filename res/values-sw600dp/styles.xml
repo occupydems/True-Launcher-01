@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="width_match_parent_max_492">
+        <item name="android:layout_width">492.0dip</item>
+    </style>
+    <style name="width_match_parent_max_524">
+        <item name="android:layout_width">524.0dip</item>
+    </style>
+</resources>

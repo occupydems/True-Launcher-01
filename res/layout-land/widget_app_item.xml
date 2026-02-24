@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.launcher3.widget.WidgetCell
+        android:orientation="horizontal"
+        android:id="@id/widget_cell"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5">
+            <TextView
+                android:textSize="14.0dip"
+                android:textColor="@color/widget_app_label"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/widget_name"
+                android:fadingEdge="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:maxLines="1" />
+            <TextView
+                android:textSize="14.0dip"
+                android:textColor="@color/widget_second_text"
+                android:gravity="center"
+                android:id="@id/widget_dims"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:alpha="0.8" />
+            <TextView
+                android:textColor="@color/widget_second_text"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/widget_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:maxLines="3" />
+        </LinearLayout>
+        <com.android.launcher3.widget.WidgetImageView
+            android:id="@id/widget_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+        <FrameLayout
+            android:id="@id/widget_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </com.android.launcher3.widget.WidgetCell>
+</FrameLayout>

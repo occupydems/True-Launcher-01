@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textColor="@color/theme_text_primary"
+        android:gravity="center"
+        android:id="@id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/wallpaper"
+        app:customFont="2"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textColor="@color/primary_button_text_color"
+        android:id="@id/favorite_button"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_favorite"
+        android:paddingEnd="16.0dip"
+        android:paddingVertical="8.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/wallpaper_list"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="6.0dip"
+        app:layout_constraintBottom_toTopOf="@id/ad_frame"
+        app:layout_constraintTop_toBottomOf="@id/label" />
+    <FrameLayout
+        android:id="@id/ad_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <FrameLayout
+        android:id="@id/no_item_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            android:layout_gravity="center"
+            android:id="@id/progress_item"
+            android:layout_width="@dimen/loading_thumb_size"
+            android:layout_height="@dimen/loading_thumb_size"
+            layout="@layout/theme_loading_layout" />
+        <include
+            android:id="@id/no_item_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_no_item_wallpaper" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

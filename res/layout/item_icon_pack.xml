@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/ripple_transparent_background"
+    android:paddingLeft="12.0dip"
+    android:paddingTop="16.0dip"
+    android:paddingRight="12.0dip"
+    android:paddingBottom="16.0dip"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="12.0dip"
+    android:paddingVertical="16.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@id/image_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="12.0dip"
+        app:cardElevation="0.0dip"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@id/image_preview"
+            android:background="@drawable/item_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="10.0dip"
+        android:textColor="@color/white"
+        android:id="@id/txt_free"
+        android:background="@drawable/ic_free_mark_bg"
+        android:paddingLeft="5.0dip"
+        android:paddingTop="2.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingBottom="2.0dip"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:text="@string/free_theme"
+        android:layout_marginStart="6.0dip"
+        android:paddingHorizontal="5.0dip"
+        android:paddingVertical="2.0dip"
+        app:layout_constraintStart_toStartOf="@id/image_container"
+        app:layout_constraintTop_toTopOf="@id/image_container" />
+    <ImageView
+        android:id="@id/txt_crown"
+        android:background="@drawable/ic_pro_mark_bg"
+        android:paddingLeft="7.3399963dip"
+        android:paddingTop="2.6299744dip"
+        android:paddingRight="7.3399963dip"
+        android:paddingBottom="2.6299744dip"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_crown"
+        android:paddingHorizontal="7.3399963dip"
+        android:paddingVertical="2.6299744dip"
+        app:layout_constraintBottom_toBottomOf="@id/txt_free"
+        app:layout_constraintStart_toStartOf="@id/txt_free"
+        app:layout_constraintTop_toTopOf="@id/txt_free" />
+    <ImageView
+        android:id="@id/icon_pack_check"
+        android:layout_width="@dimen/default_mark_size"
+        android:layout_height="@dimen/default_mark_size"
+        android:src="@drawable/filled_tick"
+        app:layout_constraintBottom_toBottomOf="@id/icon_pack_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icon_pack_name" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="12.5dip"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_text"
+        android:ellipsize="end"
+        android:id="@id/icon_pack_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:maxLines="1"
+        android:lines="1"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_pack_check"
+        app:layout_constraintTop_toBottomOf="@id/image_container" />
+    <ImageView
+        android:id="@id/checked_item_icon"
+        android:visibility="gone"
+        android:layout_width="25.0dip"
+        android:layout_height="24.0dip"
+        android:src="@drawable/filled_tick"
+        android:translationX="8.0dip"
+        android:translationY="-8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

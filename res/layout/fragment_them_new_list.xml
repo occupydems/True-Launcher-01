@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/banner_list"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20.0dip"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_banner_cross_theme" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@id/tab_layout"
+        android:background="@null"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:paddingHorizontal="@dimen/dp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner_list"
+        app:tabGravity="center"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="4.0dip"
+        app:tabPaddingStart="4.0dip"
+        app:tabRippleColor="@null" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@id/featured_pager"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+    <FrameLayout
+        android:id="@id/no_item_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            android:layout_gravity="center"
+            android:id="@id/progress_item"
+            android:layout_width="@dimen/loading_thumb_size"
+            android:layout_height="@dimen/loading_thumb_size"
+            layout="@layout/theme_loading_layout" />
+        <include
+            android:id="@id/no_item_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_no_item_wallpaper" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

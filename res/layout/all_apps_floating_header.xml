@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.allapps.FloatingHeaderView
+    android:orientation="vertical"
+    android:id="@id/all_apps_header"
+    android:paddingTop="@dimen/all_apps_header_top_padding"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/search_container_all_apps"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

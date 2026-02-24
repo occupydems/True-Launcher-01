@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.settings.custom.TextViewCustomFont
+    android:textSize="32.0dip"
+    android:textStyle="bold"
+    android:textColor="#ffffffff"
+    android:id="@id/txt_lib_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="48.0dip"
+    android:layout_marginBottom="24.0dip"
+    android:text="Category"
+    android:layout_marginStart="14.0dip"
+    app:customFont="2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

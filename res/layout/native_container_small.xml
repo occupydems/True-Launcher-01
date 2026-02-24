@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffffff"
+    app:cardCornerRadius="@dimen/native_small_default_radius"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/fl_adplaceholder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@id/shimmer_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:shimmer_auto_start="false">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="16.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@id/icon_container_shimmer"
+                android:layout_width="68.0dip"
+                android:layout_height="68.0dip"
+                app:cardCornerRadius="12.0dip"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:id="@id/shimmer_icon"
+                    android:background="@color/shimmer_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:textSize="14.0dip"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:id="@id/shimmer_title"
+                android:background="@color/shimmer_content"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginStart="8.0dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon_container_shimmer"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:textSize="8.0dip"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@id/ad_mark_shimmer"
+                android:background="@drawable/ad_mark_background"
+                android:layout_width="27.0dip"
+                android:layout_height="14.0dip"
+                android:layout_marginTop="2.0dip"
+                android:text="Ad"
+                app:layout_constraintStart_toStartOf="@id/shimmer_title"
+                app:layout_constraintTop_toBottomOf="@id/shimmer_title" />
+            <RatingBar
+                android:id="@id/ad_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:isIndicator="true"
+                android:layout_marginStart="4.0dip"
+                app:layout_constraintBottom_toBottomOf="@id/ad_mark_shimmer"
+                app:layout_constraintStart_toEndOf="@id/ad_mark_shimmer"
+                app:layout_constraintTop_toTopOf="@id/ad_mark_shimmer"
+                style="?android:ratingBarStyleSmall" />
+            <TextView
+                android:textSize="12.0dip"
+                android:textColor="#ff666666"
+                android:ellipsize="end"
+                android:id="@id/shimmer_body"
+                android:background="@color/shimmer_content"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:text=" \n "
+                android:maxLines="2"
+                android:layout_marginEnd="8.0dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/shimmer_title"
+                app:layout_constraintTop_toBottomOf="@id/ad_mark_shimmer" />
+            <Button
+                android:textSize="12.0dip"
+                android:textColor="#ffffffff"
+                android:id="@id/ad_call_to_action"
+                android:background="@drawable/bg_native_button"
+                android:paddingLeft="12.0dip"
+                android:paddingTop="10.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingBottom="10.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:minWidth="0.0dip"
+                android:minHeight="0.0dip"
+                android:backgroundTint="#ff007aff"
+                android:paddingHorizontal="12.0dip"
+                android:paddingVertical="10.0dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_container_shimmer" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.cardview.widget.CardView>

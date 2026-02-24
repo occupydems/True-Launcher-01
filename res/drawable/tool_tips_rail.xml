@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="13.0dip"
+    android:width="47.0dip"
+    android:viewportWidth="47.0"
+    android:viewportHeight="13.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@color/icon_pack_tool_tips_bg"
+        android:pathData="M47,12.997C45.287,12.997 43.576,13.005 41.863,12.987C40.224,12.969 38.39,12.943 36.794,12.342C35.072,11.692 33.931,10.555 32.783,9.218C31.957,8.256 30.334,6.203 29.544,5.212C28.897,4.4 27.631,2.794 26.94,2.017C26.069,1.039 24.994,0 23.5,0C22.005,0 20.93,1.039 20.06,2.016C19.369,2.792 18.103,4.399 17.456,5.211C16.667,6.202 15.043,8.255 14.217,9.217C13.067,10.554 11.928,11.691 10.206,12.341C8.61,12.941 6.775,12.968 5.137,12.986C3.424,13.004 1.712,12.996 0,12.996"
+        android:fillType="evenOdd" />
+</vector>

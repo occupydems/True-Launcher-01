@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/switch_container"
+    android:background="@drawable/my_switch_bg"
+    android:padding="@dimen/my_switch_view_padding"
+    android:layout_width="@dimen/my_switch_view_width"
+    android:layout_height="@dimen/my_switch_view_height"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:id="@id/switch_bar"
+        android:background="@drawable/my_switch_bar"
+        android:layout_width="@dimen/my_switch_bar_size"
+        android:layout_height="@dimen/my_switch_bar_size" />
+</FrameLayout>

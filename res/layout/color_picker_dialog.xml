@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/icon_pack_bottom_sheet_bg_color"
+    app:cardCornerRadius="13.0dip"
+    app:cardElevation="0.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16.0dip"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="17.0sp"
+            android:textColor="@color/icon_pack_text"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_pack_colors_picker"
+            app:customFont="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.flask.colorpicker.ColorPickerView
+            android:id="@id/color_picker_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            app:alphaSlider="false"
+            app:alphaSliderView="@id/v_alpha_slider"
+            app:density="12"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:lightnessSlider="true"
+            app:lightnessSliderView="@id/v_lightness_slider"
+            app:wheelType="FLOWER" />
+        <com.flask.colorpicker.slider.LightnessSlider
+            android:id="@id/v_lightness_slider"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginTop="16.0dip"
+            app:layout_constraintTop_toBottomOf="@id/color_picker_view" />
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="14.199982dip"
+            android:textColor="@color/pro_sub_text"
+            android:id="@id/txt_hex_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color_hex_code"
+            app:layout_constraintBottom_toBottomOf="@id/edt_hex"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edt_hex" />
+        <EditText
+            android:textColor="@color/pro_main_text"
+            android:id="@id/edt_hex"
+            android:background="@drawable/icon_pac_edittext_bg"
+            android:padding="8.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:maxLength="7"
+            android:layout_marginStart="8.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_hex_title"
+            app:layout_constraintTop_toBottomOf="@id/v_lightness_slider" />
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="15.0dip"
+            android:textColor="@color/icon_pack_button_color"
+            android:gravity="center"
+            android:id="@id/cancel_button"
+            android:background="@drawable/icon_pack_cancel_button_bg"
+            android:paddingTop="7.0dip"
+            android:paddingBottom="7.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.0dip"
+            android:text="@string/cancel"
+            android:layout_marginEnd="4.0dip"
+            android:paddingVertical="7.0dip"
+            app:layout_constraintEnd_toStartOf="@id/apply_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_hex" />
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="15.0dip"
+            android:textColor="@color/apply_button_text_color"
+            android:gravity="center"
+            android:id="@id/apply_button"
+            android:background="@drawable/icon_pack_apply_color_button"
+            android:paddingTop="7.0dip"
+            android:paddingBottom="7.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.0dip"
+            android:text="@string/apply"
+            android:layout_marginStart="4.0dip"
+            android:paddingVertical="7.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cancel_button"
+            app:layout_constraintTop_toBottomOf="@id/edt_hex" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/dialog_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="17.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_text"
+        android:gravity="center"
+        android:id="@id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="19.0dip"
+        android:layout_marginRight="16.0dip"
+        android:text="@string/unsaved_changes"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textSize="13.0dip"
+        android:textColor="@color/icon_pack_text"
+        android:gravity="center"
+        android:id="@id/dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:text="@string/you_can_save_your_edit"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintTop_toBottomOf="@id/dialog_title" />
+    <View
+        android:id="@id/divider_top"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="15.0dip"
+        app:layout_constraintTop_toBottomOf="@id/dialog_content"
+        app:layout_goneMarginTop="16.0dip" />
+    <TextView
+        android:textSize="17.0dip"
+        android:textColor="@color/red_color"
+        android:gravity="center"
+        android:id="@id/discard_button"
+        android:background="@drawable/confirm_button_background"
+        android:paddingTop="9.0dip"
+        android:paddingBottom="9.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discard"
+        android:paddingVertical="9.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_top" />
+    <View
+        android:id="@id/divider_neutral"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        app:layout_constraintTop_toBottomOf="@id/discard_button" />
+    <TextView
+        android:textSize="17.0dip"
+        android:textColor="@color/icon_pack_button_color"
+        android:gravity="center"
+        android:id="@id/continue_button"
+        android:background="@drawable/confirm_button_background"
+        android:paddingTop="9.0dip"
+        android:paddingBottom="9.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_edit"
+        android:paddingVertical="9.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_neutral" />
+    <View
+        android:id="@id/divider_save"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        app:layout_constraintTop_toBottomOf="@id/continue_button" />
+    <TextView
+        android:textSize="17.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_button_color"
+        android:gravity="center"
+        android:id="@id/save_button"
+        android:background="@drawable/confirm_button_background_left_right"
+        android:paddingTop="9.0dip"
+        android:paddingBottom="9.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:paddingVertical="9.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>

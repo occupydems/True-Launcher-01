@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:focusable="true"
+    android:clickable="true"
+    android:duplicateParentState="true"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/text_size_12"
+    android:layout_marginStart="16.0dip"
+    app:cardCornerRadius="@dimen/text_size_18"
+    app:cardElevation="6.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/image_thumb_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+    <com.truelib.settings.wallpaper.view.ClockWidget
+        android:id="@id/clockWidget"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginStart="2.0dip"
+        android:layout_marginEnd="2.0dip"
+        app:dateFontSize="@dimen/small_date_font"
+        app:timeFontSize="@dimen/small_clock_font" />
+</androidx.cardview.widget.CardView>

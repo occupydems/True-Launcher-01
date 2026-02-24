@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="16.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/counter_wrapper"
+        android:paddingLeft="24.0dip"
+        android:paddingRight="24.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:minHeight="150.0dip"
+        android:paddingHorizontal="24.0dip"
+        app:layout_constraintHeight_percent="0.33333"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/stop_watch_text_size"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/txt_counter"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:text="00:00,00"
+            android:lines="1" />
+    </FrameLayout>
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:id="@id/btn_lap"
+        android:background="@drawable/gray_selector_circle_bg"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:text="@string/lap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/counter_wrapper" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:id="@id/btn_reset"
+        android:background="@drawable/gray_selector_circle_bg"
+        android:visibility="gone"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:text="@string/clock_reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/counter_wrapper" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/clock_start_text_color"
+        android:gravity="center"
+        android:id="@id/btn_start"
+        android:background="@drawable/circle_bg"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:text="@string/start"
+        android:backgroundTint="@color/clock_start_bg_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/counter_wrapper" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/clock_stop_text_color"
+        android:gravity="center"
+        android:id="@id/btn_stop"
+        android:background="@drawable/circle_bg"
+        android:visibility="gone"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:text="@string/stop"
+        android:backgroundTint="@color/clock_stop_bg_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/counter_wrapper" />
+    <View
+        android:id="@id/view"
+        android:background="#a6545458"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="86.0dip"
+        app:layout_constraintTop_toBottomOf="@id/counter_wrapper" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rcv_time_lap"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

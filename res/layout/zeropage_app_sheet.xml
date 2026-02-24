@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.zeropage.sheet.ZeroPageAppSheet
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="-1.0dip"
+    android:layout_marginRight="-1.0dip"
+    android:layout_marginBottom="-40.0dip"
+    android:layout_marginHorizontal="-1.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/widget_app_sheet_content" />
+</com.android.launcher3.zeropage.sheet.ZeroPageAppSheet>

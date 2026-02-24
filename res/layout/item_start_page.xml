@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/start_page_image_background"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/page_label"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/start_page_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="14.0dip"
+        android:layout_marginBottom="14.0dip"
+        android:layout_marginVertical="14.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/start_page_image_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/start_page_image_background" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="@dimen/text_size_title_start_page"
+        android:textColor="#ff000000"
+        android:id="@id/page_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        app:customFont="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_page_image_background" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="@dimen/text_size_des_start_page"
+        android:textColor="@color/color_des_item_start_page"
+        android:gravity="center"
+        android:id="@id/page_description"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:customFont="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/page_label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

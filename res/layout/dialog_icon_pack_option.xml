@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/option_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        app:layout_constraintBottom_toTopOf="@id/cancel_button" />
+    <TextView
+        android:textSize="@dimen/option_item_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_button_color"
+        android:gravity="center"
+        android:id="@id/cancel_button"
+        android:background="@drawable/option_item_both"
+        android:paddingTop="@dimen/option_item_padding_vert"
+        android:paddingBottom="@dimen/option_item_padding_vert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:paddingVertical="@dimen/option_item_padding_vert"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/select_type_bottom_sheet_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="22.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_text"
+        android:id="@id/select_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="@string/select_icon_style"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/close_button"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:src="@drawable/select_icon_close"
+        android:layout_marginEnd="16.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/select_icon_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/select_icon_text" />
+    <View
+        android:id="@id/select_icon_divider"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="20.0dip"
+        app:layout_constraintTop_toBottomOf="@id/select_icon_text" />
+    <ImageView
+        android:id="@id/adaptive_icon"
+        android:layout_width="@dimen/select_icon_size"
+        android:layout_height="@dimen/select_icon_size"
+        android:layout_marginTop="16.0dip"
+        android:src="@drawable/adaptive_icon_preview"
+        app:layout_constraintBottom_toTopOf="@id/adaptive_text"
+        app:layout_constraintEnd_toStartOf="@id/simple_icon"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_icon_divider" />
+    <TextView
+        android:textSize="13.0dip"
+        android:textColor="@color/icon_pack_text"
+        android:gravity="center"
+        android:id="@id/adaptive_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:text="@string/adaptive"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/adaptive_icon"
+        app:layout_constraintStart_toStartOf="@id/adaptive_icon"
+        app:layout_constraintTop_toBottomOf="@id/adaptive_icon" />
+    <ImageView
+        android:id="@id/simple_icon"
+        android:layout_width="@dimen/select_icon_size"
+        android:layout_height="@dimen/select_icon_size"
+        android:layout_marginLeft="26.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="26.0dip"
+        android:src="@drawable/simple_icon_preview"
+        android:layout_marginHorizontal="26.0dip"
+        app:layout_constraintBottom_toTopOf="@id/simple_text"
+        app:layout_constraintEnd_toStartOf="@id/text_icon"
+        app:layout_constraintStart_toEndOf="@id/adaptive_icon"
+        app:layout_constraintTop_toBottomOf="@id/select_icon_divider" />
+    <TextView
+        android:textSize="13.0dip"
+        android:textColor="@color/icon_pack_text"
+        android:gravity="center"
+        android:id="@id/simple_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:text="@string/simple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/simple_icon"
+        app:layout_constraintStart_toStartOf="@id/simple_icon"
+        app:layout_constraintTop_toBottomOf="@id/simple_icon" />
+    <ImageView
+        android:id="@id/text_icon"
+        android:layout_width="@dimen/select_icon_size"
+        android:layout_height="@dimen/select_icon_size"
+        android:layout_marginTop="16.0dip"
+        android:src="@drawable/text_icon_preview"
+        app:layout_constraintBottom_toTopOf="@id/text_icon_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/simple_icon"
+        app:layout_constraintTop_toBottomOf="@id/select_icon_divider" />
+    <TextView
+        android:textSize="13.0dip"
+        android:textColor="@color/icon_pack_text"
+        android:gravity="center"
+        android:id="@id/text_icon_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:text="@string/text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/text_icon"
+        app:layout_constraintStart_toStartOf="@id/text_icon"
+        app:layout_constraintTop_toBottomOf="@id/text_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

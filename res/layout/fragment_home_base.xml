@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.themes.view.IOSTabView
+        android:id="@id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="12.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:item_font="2"
+        app:item_padding="11.0dip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:selection_background="@color/theme_transparent_tertiary"
+        app:selection_bold="false"
+        app:selection_corner="100.0dip"
+        app:selection_text_color="@color/theme_text_primary"
+        app:showDivider="false"
+        app:showShadow="false"
+        app:show_background="false"
+        app:show_padding="false"
+        app:unselection_text_color="@color/theme_text_secondary" />
+    <FrameLayout
+        android:id="@id/home_fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="12.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

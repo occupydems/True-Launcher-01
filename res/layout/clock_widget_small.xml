@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/clock_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/clock_bg"
+        android:contentDescription="@string/clock" />
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/hour_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hour"
+        android:contentDescription="@string/clock"
+        android:rotation="300.0" />
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/minute_image"
+        android:padding="3.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/minute"
+        android:contentDescription="@string/clock"
+        android:rotation="250.0" />
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/sec_image"
+        android:padding="5.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/second"
+        android:contentDescription="@string/clock"
+        android:rotation="180.0" />
+</FrameLayout>

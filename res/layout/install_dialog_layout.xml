@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/open_button"
+        app:layout_constraintEnd_toStartOf="@id/native_ad_frame_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@id/app_icon"
+            android:background="@drawable/bg_content"
+            android:padding="20.0dip"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            android:layout_marginTop="@dimen/fit_window_cutout_mode"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitCenter" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="19.0dip"
+            android:textColor="@android:color/black"
+            android:id="@id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_widget_padding"
+            android:text="@string/app_name"
+            app:customFont="3" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.android.launcher3.settings.custom.TextViewCustomFont
+                android:textSize="12.0dip"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:id="@id/progress_title"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/optimizing" />
+            <com.android.launcher3.settings.custom.TextViewCustomFont
+                android:textSize="12.0dip"
+                android:textColor="@android:color/darker_gray"
+                android:gravity="center"
+                android:id="@id/text_done"
+                android:background="@drawable/bg_scan_button"
+                android:paddingLeft="6.0dip"
+                android:paddingTop="3.0dip"
+                android:paddingRight="6.0dip"
+                android:paddingBottom="3.0dip"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/optimizing"
+                android:drawableLeft="@drawable/ic_scanner"
+                android:drawablePadding="@dimen/default_widget_padding"
+                app:customFont="3" />
+        </FrameLayout>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@id/animationView"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="5.0dip"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/scan_app" />
+    </LinearLayout>
+    <ImageView
+        android:id="@id/ic_close"
+        android:padding="3.0dip"
+        android:visibility="gone"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginRight="16.0dip"
+        android:src="@drawable/ic_clear"
+        android:tint="#ffcccccc"
+        app:layout_constraintEnd_toStartOf="@id/native_ad_frame_right"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/ic_info"
+        android:padding="3.0dip"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginRight="16.0dip"
+        android:src="@drawable/ic_info_android"
+        android:tint="#ff666666"
+        app:layout_constraintEnd_toStartOf="@id/ic_close"
+        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@id/native_ad_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <FrameLayout
+        android:id="@id/native_ad_frame_right"
+        android:paddingTop="@dimen/install_native_margin"
+        android:paddingBottom="@dimen/install_native_margin"
+        android:visibility="visible"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/install_native_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="16.0dip"
+        android:gravity="center"
+        android:id="@id/open_button"
+        android:background="@drawable/bg_scan_button"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/all_apps_search_bar_field_height"
+        android:layout_marginLeft="@dimen/install_open_btn_margin"
+        android:layout_marginRight="@dimen/install_open_btn_margin"
+        android:layout_marginBottom="8.0dip"
+        android:text="@string/open"
+        android:textAllCaps="true"
+        android:backgroundTint="#ffbcbbbb"
+        android:layout_marginHorizontal="@dimen/install_open_btn_margin"
+        app:customFont="3"
+        app:layout_constraintBottom_toTopOf="@id/native_ad_frame"
+        app:layout_constraintEnd_toStartOf="@id/native_ad_frame_right"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

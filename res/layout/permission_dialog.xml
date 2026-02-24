@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.truelib.common.blur.OneShotBlurConstraintLayout
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40.0dip"
+    android:layout_marginRight="40.0dip"
+    android:layout_marginHorizontal="40.0dip"
+    app:blur_color="@color/popup_blur_filter"
+    app:blur_cornerRadius="36.0dip"
+    style="@style/width_match_parent_max_492"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/icon"
+        android:visibility="gone"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_marginTop="24.0dip"
+        android:layout_marginStart="24.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.settings.custom.TextCustomFont
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="16.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/common_text"
+        android:gravity="start"
+        android:id="@id/txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="24.0dip"
+        android:text="Title"
+        android:layout_marginHorizontal="24.0dip"
+        app:customFont="2"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        app:layout_goneMarginTop="24.0dip" />
+    <com.truelib.settings.custom.TextCustomFont
+        android:textSize="14.0dip"
+        android:textColor="@color/common_text"
+        android:gravity="start"
+        android:id="@id/txt_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="24.0dip"
+        android:text="Message"
+        android:layout_marginHorizontal="24.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/action_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_message" />
+</com.truelib.common.blur.OneShotBlurConstraintLayout>

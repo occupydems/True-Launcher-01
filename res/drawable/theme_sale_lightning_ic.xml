@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="12.0dip"
+    android:width="8.0dip"
+    android:viewportWidth="8.0"
+    android:viewportHeight="12.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <path
+        android:fillColor="@drawable/$theme_sale_lightning_ic__0"
+        android:pathData="M7.718,4.769C7.665,4.663 7.554,4.595 7.432,4.595H5.401L7.08,1.349C7.129,1.253 7.124,1.14 7.066,1.049C7.008,0.959 6.905,0.903 6.795,0.903H2.977C2.845,0.903 2.726,0.983 2.679,1.103L0.77,6.025C0.734,6.119 0.747,6.225 0.806,6.308C0.866,6.391 0.964,6.44 1.068,6.44H3.206L2.032,11.021C1.996,11.161 2.065,11.307 2.2,11.372C2.333,11.435 2.495,11.401 2.589,11.288L7.68,5.095C7.757,5.002 7.772,4.876 7.718,4.769Z" />
+</vector>

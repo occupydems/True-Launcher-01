@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/ripple_transparent_background"
+    android:paddingLeft="10.0dip"
+    android:paddingTop="6.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingBottom="6.0dip"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10.0dip"
+    android:paddingVertical="6.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@id/image_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="12.0dip"
+        app:cardElevation="0.0dip"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/theme_transparent_secondary"
+        app:strokeWidth="1.0dip">
+        <ImageView
+            android:id="@id/image_preview"
+            android:background="@drawable/item_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+    </com.google.android.material.card.MaterialCardView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@id/ic_new"
+        android:visibility="invisible"
+        android:layout_width="29.0dip"
+        android:layout_height="16.0dip"
+        android:layout_marginTop="6.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/new_anim" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@id/ic_sale_off"
+        android:visibility="gone"
+        android:layout_width="29.0dip"
+        android:layout_height="16.0dip"
+        android:layout_marginTop="6.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/sale" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="12.5dip"
+        android:textStyle="bold"
+        android:textColor="@color/theme_text_primary"
+        android:ellipsize="end"
+        android:id="@id/icon_pack_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:maxLines="1"
+        android:lines="1"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

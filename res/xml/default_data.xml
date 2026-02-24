@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>banner_data</key>
+        <value>[
+            {
+            "packageName":"com.tools.control.center.simplecontrol.ios26",
+            "appName":"Control Center iOS",
+            "appLink":"https://play-lh.googleusercontent.com/Gz56Z_dJisWeMvmZwUV1PLdWyO1ONO4z7m7V1o77LRVdDVBsPmk_Tyo8Itl1GcZ_rVbX=s48",
+            "bannerLink":"https://play-lh.googleusercontent.com/XkvZ6u2hAR8esC_6OTDHH3VA7RL3ng9DtQURF1UDUYnF7U3YiuKA0I11G-kh2LlUbQ=w832-h470-rw"
+            },
+            {
+            "packageName":"com.trueapp.dialer",
+            "appName":"Phone Dialer",
+            "appLink":"https://play-lh.googleusercontent.com/Ywof7FmRCFIha9Wk1wkg26THOWe82v5fk-34hQr7OIxawydeKTyTugshNKWfnxB_3Fo=s48",
+            "bannerLink":"https://play-lh.googleusercontent.com/f9eUS70v557fVPXL4R9ATYq0kEKql81w7rFFCTBr7aYR2qQMW4ixfH3F6H8HgMHHZNg=w832-h470-rw"
+            },
+            {
+            "packageName":"com.trueapp.smsmessenger",
+            "appName":"SMS Messenger",
+            "appLink":"https://play-lh.googleusercontent.com/e410Rc6pcoHDuVbLbhAmivQW2ihqFOboDdyB-inmTNHYYjNLHyuka8b7-C84Z11m1Js=s48",
+            "bannerLink":"https://play-lh.googleusercontent.com/ZAIj5w0ELfvCJRQaxMoI1wPlkb5qXBJKYmE7up0f884qAGnFgqLelCTEvSB34Va-9Q=w832-h470-rw"
+            },
+            {
+            "packageName":"com.trueapp.contacts",
+            "appName":"Contacts",
+            "appLink":"https://play-lh.googleusercontent.com/ikTuUmUVeC4UDJ4MYwNx3AQHyPzrgFXveM3ExNej1V20X1de972Jy4PFN70aRIsEQuCz=s48",
+            "bannerLink":"https://play-lh.googleusercontent.com/r2EAjkLtQrV1Nc1q95eivI4Zhmvd6YPp1BnRRhbkNFw_bIHe1lOhznQmEAPPh3jCAQ=w832-h470-rw"
+            }
+            ]</value>
+    </entry>
+</defaultsMap>

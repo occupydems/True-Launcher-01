@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.views.GlassFrameLayout
+    android:id="@id/container"
+    android:paddingBottom="40.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.android.launcher3.views.DampingTopRoundCornerView
+            android:id="@id/damping"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+            <com.android.launcher3.widget.WidgetsRecyclerView
+                android:id="@id/widgets_list_view"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <com.android.launcher3.widget.WidgetsRecyclerView
+                android:id="@id/search_widgets_list_view"
+                android:visibility="gone"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </com.android.launcher3.views.DampingTopRoundCornerView>
+        <com.android.launcher3.BlurExtendedEditText
+            android:textSize="18.0dip"
+            android:textColor="@color/widget_sheet_text_search_color"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@id/search_container_all_apps"
+            android:focusableInTouchMode="true"
+            android:saveEnabled="false"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/all_apps_search_bar_field_height"
+            android:layout_marginTop="29.0dip"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:imeOptions="actionSearch|flagNoExtractUi"
+            android:textCursorDrawable="@drawable/widget_sheet_cursor"
+            android:paddingStart="38.0dip"
+            android:paddingEnd="12.0dip"
+            android:elevation="1.0dip"
+            app:background_color="@color/widget_search_bar_bg_color"
+            app:clearIcon="@drawable/ic_app_search_clear"
+            app:has_stroke="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:round_radius="22.0dip" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textColor="@color/widget_search_bar_cancel_text"
+            android:gravity="center"
+            android:id="@id/btn_cancel"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:text="@string/cancel"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:elevation="1.0dip"
+            android:paddingHorizontal="12.0dip"
+            app:layout_constraintBottom_toBottomOf="@id/search_container_all_apps"
+            app:layout_constraintStart_toEndOf="@id/search_container_all_apps"
+            app:layout_constraintTop_toTopOf="@id/search_container_all_apps" />
+        <LinearLayout
+            android:gravity="start|center"
+            android:orientation="horizontal"
+            android:id="@id/hint_wrapper"
+            android:background="@drawable/bg_search_settings"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:paddingStart="12.0dip"
+            android:elevation="1.0dip"
+            app:layout_constraintBottom_toBottomOf="@id/search_container_all_apps"
+            app:layout_constraintEnd_toEndOf="@id/search_container_all_apps"
+            app:layout_constraintStart_toStartOf="@id/search_container_all_apps"
+            app:layout_constraintTop_toTopOf="@id/search_container_all_apps">
+            <ImageView
+                android:id="@id/img_ic_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_zero_page_search" />
+            <com.android.launcher3.settings.custom.TextViewCustomFont
+                android:textSize="16.0dip"
+                android:textColor="@color/widget_sheet_text_hint_color"
+                android:id="@id/txt_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_widgets"
+                android:includeFontPadding="false"
+                android:paddingStart="9.0dip" />
+        </LinearLayout>
+        <View
+            android:id="@id/top_bar"
+            android:background="@drawable/bottom_sheet_bar"
+            android:layout_width="36.0dip"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_marginTop="12.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@id/divider"
+            android:background="@color/widget_sheet_search_box_color"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            app:layout_constraintTop_toBottomOf="@id/search_container_all_apps" />
+        <TextView
+            android:id="@id/fast_scroller_popup"
+            android:visibility="invisible"
+            android:layout_marginEnd="@dimen/fastscroll_popup_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/FastScrollerPopup" />
+        <com.android.launcher3.views.RecyclerViewFastScroller
+            android:id="@id/fast_scroller"
+            android:visibility="invisible"
+            android:layout_width="@dimen/fastscroll_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/fastscroll_end_margin"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.android.launcher3.views.GlassFrameLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/new_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.settings.custom.TextCustomFont
+        android:textSize="@dimen/bigger_text_size"
+        android:textColor="@color/color_content_1st"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/function"
+        android:layout_marginStart="@dimen/medium_margin"
+        app:customFont="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.settings.custom.SafeNestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/margin_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@id/preview_pager"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginVertical="8.0dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.truelib.settings.wallpaper.view.CustomPageIndicator
+                android:id="@id/indicator_layout"
+                android:layout_width="70.0dip"
+                android:layout_height="24.0dip"
+                android:layout_marginBottom="8.0dip"
+                app:layout_constraintBottom_toTopOf="@id/title_launcher_functions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/preview_pager" />
+            <com.truelib.settings.custom.TextCustomFont
+                android:textSize="14.0dip"
+                android:textColor="@color/content_3rd"
+                android:id="@id/title_launcher_functions"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:text="Launcher Functions"
+                android:layout_marginVertical="8.0dip"
+                android:paddingHorizontal="@dimen/medium_margin"
+                app:customFont="2"
+                app:layout_constraintBottom_toTopOf="@id/rv_app_launcher_functions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/indicator_layout" />
+            <com.truelib.settings.custom.TextCustomFont
+                android:textColor="@color/color_content_brand"
+                android:id="@id/see_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_more_2"
+                android:drawablePadding="8.0dip"
+                android:drawableEnd="@drawable/ic_setting_arrow"
+                android:layout_marginEnd="16.0dip"
+                android:drawableTint="@color/color_content_brand"
+                app:layout_constraintBottom_toBottomOf="@id/title_launcher_functions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/title_launcher_functions" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rv_app_launcher_functions"
+                android:paddingBottom="70.0dip"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:paddingEnd="42.0dip"
+                android:layout_marginVertical="8.0dip"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_launcher_functions"
+                app:spanCount="2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.truelib.settings.custom.SafeNestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

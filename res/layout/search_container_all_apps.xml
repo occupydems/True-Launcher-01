@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.allapps.search.AppsSearchContainerLayout
+    android:textSize="16.0dip"
+    android:textColor="?android:textColorSecondary"
+    android:textColorHint="@drawable/all_apps_search_hint"
+    android:gravity="center"
+    android:id="@id/search_container_all_apps"
+    android:background="@drawable/bg_all_apps_searchbox"
+    android:padding="8.0dip"
+    android:focusableInTouchMode="true"
+    android:saveEnabled="false"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/all_apps_search_bar_field_height"
+    android:layout_margin="24.0dip"
+    android:hint="@string/all_apps_search_bar_hint"
+    android:maxLines="1"
+    android:scrollHorizontally="true"
+    android:singleLine="true"
+    android:inputType="textCapWords|textNoSuggestions"
+    android:imeOptions="actionSearch|flagNoExtractUi"
+    android:elevation="1.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

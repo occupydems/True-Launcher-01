@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:background="@drawable/ripple_border"
+    android:paddingLeft="16.0dip"
+    android:paddingRight="16.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="16.75sp"
+        android:textColor="@color/appearance_text_color"
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginVertical="12.0dip" />
+    <ImageView
+        android:id="@id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_ai_setting_check"
+        android:layout_centerVertical="true"
+        android:importantForAccessibility="no"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:id="@id/divider"
+        android:background="@color/appearance_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/tv_title" />
+</RelativeLayout>

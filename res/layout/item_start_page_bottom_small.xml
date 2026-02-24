@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.common.FlexibleImage
+        android:id="@id/start_page_image_background"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/page_label"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_swipe"
+        android:background="@drawable/loading_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/start_page_image_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center_horizontal"
+            android:id="@id/lottie_swipe"
+            android:layout_width="96.0dip"
+            android:layout_height="96.0dip"
+            android:layout_marginLeft="26.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="26.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginHorizontal="26.0dip"
+            android:layout_marginVertical="8.0dip"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/swipe" />
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="16.75dip"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:text="@string/swipe_to_continue"
+            android:paddingHorizontal="8.0dip"
+            app:customFont="2" />
+    </LinearLayout>
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="@dimen/text_size_title_start_page"
+        android:textColor="#ff000000"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:id="@id/page_label"
+        android:paddingTop="16.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:maxLines="1"
+        android:layout_marginHorizontal="16.0dip"
+        app:customFont="2"
+        app:layout_constraintBottom_toTopOf="@id/page_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="@dimen/text_size_des_start_page"
+        android:textColor="@color/color_des_item_start_page"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:id="@id/page_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:maxLines="2"
+        android:layout_marginHorizontal="16.0dip"
+        app:customFont="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

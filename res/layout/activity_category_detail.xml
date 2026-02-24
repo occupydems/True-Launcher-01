@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/btn_back"
+        android:padding="14.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_marginTop="4.0dip"
+        android:foreground="@drawable/ripple_transparent_background_16"
+        android:src="@drawable/ic_arrow_left_thin"
+        android:layout_marginStart="2.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/btn_sort"
+        android:padding="14.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_marginTop="4.0dip"
+        android:foreground="@drawable/ripple_transparent_background_16"
+        android:src="@drawable/ic_sort"
+        android:layout_marginEnd="2.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/btn_search"
+        android:padding="14.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_marginTop="4.0dip"
+        android:foreground="@drawable/ripple_transparent_background_16"
+        android:src="@drawable/ic_search_theme"
+        android:layout_marginEnd="16.0dip"
+        app:layout_constraintEnd_toStartOf="@id/btn_sort"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="18.5dip"
+        android:ellipsize="end"
+        android:id="@id/txt_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:lines="1"
+        android:layout_marginEnd="16.0dip"
+        app:customFont="2"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+        app:layout_constraintEnd_toStartOf="@id/btn_search"
+        app:layout_constraintStart_toEndOf="@id/btn_back"
+        app:layout_constraintTop_toTopOf="@id/btn_back" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recycler_view"
+        android:paddingTop="8.0dip"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="4.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back" />
+    <ScrollView
+        android:id="@id/error_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@id/no_item_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:layout_gravity="center"
+                android:id="@id/progress_item"
+                android:layout_width="@dimen/loading_thumb_size"
+                android:layout_height="@dimen/loading_thumb_size"
+                layout="@layout/theme_loading_layout" />
+            <include
+                android:id="@id/no_item_view"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_no_item_wallpaper" />
+        </FrameLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

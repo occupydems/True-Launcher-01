@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container"
+    android:background="@drawable/select_type_bottom_sheet_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="20.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_text"
+        android:gravity="center"
+        android:id="@id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="32.0dip"
+        android:layout_marginRight="16.0dip"
+        android:text="@string/customized_icon_pack"
+        android:layout_marginHorizontal="16.0dip"
+        app:customFont="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/icon_pack_text"
+        android:gravity="center"
+        android:id="@id/description"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="16.0dip"
+        android:text="@string/customized_icon_pack_description"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:orientation="horizontal"
+        android:id="@id/view_pager"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="181.0dip"
+        android:layout_marginTop="20.0dip"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+    <com.android.launcher3.pageindicators.PageIndicatorDots
+        android:id="@id/page_indicator"
+        android:layout_width="0.0dip"
+        android:layout_height="24.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="32.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_pager" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textColor="@color/icon_pack_text"
+        android:gravity="center"
+        android:id="@id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_found_any_icon_pack"
+        app:layout_constraintBottom_toBottomOf="@id/view_pager"
+        app:layout_constraintEnd_toEndOf="@id/view_pager"
+        app:layout_constraintStart_toStartOf="@id/view_pager"
+        app:layout_constraintTop_toTopOf="@id/view_pager" />
+</androidx.constraintlayout.widget.ConstraintLayout>

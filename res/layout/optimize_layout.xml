@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="500.0dip"
+        android:layout_height="500.0dip"
+        android:src="@drawable/circle_grow_light_optimize"
+        app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@id/progress_circular" />
+    <ImageView
+        android:layout_width="400.0dip"
+        android:layout_height="400.0dip"
+        android:src="@drawable/optimize_bg"
+        app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@id/progress_circular" />
+    <ProgressBar
+        android:id="@id/progress_circular"
+        android:layout_width="112.0dip"
+        android:layout_height="112.0dip"
+        android:layout_marginBottom="80.0dip"
+        android:indeterminateDrawable="@drawable/radar_loading"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <View
+        android:id="@id/done_anim_bg"
+        android:background="@drawable/circle_bg"
+        android:visibility="gone"
+        android:layout_width="96.0dip"
+        android:layout_height="96.0dip"
+        android:backgroundTint="#fff2f2f7"
+        app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@id/progress_circular" />
+    <View
+        android:id="@id/dot_1"
+        android:background="@drawable/circle_bg"
+        android:layout_width="4.0dip"
+        android:layout_height="4.0dip"
+        android:layout_marginTop="16.0dip"
+        android:alpha="0.0"
+        android:layout_marginStart="40.0dip"
+        android:backgroundTint="#ff007aff"
+        app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@id/progress_circular" />
+    <View
+        android:id="@id/dot_2"
+        android:background="@drawable/circle_bg"
+        android:layout_width="4.0dip"
+        android:layout_height="4.0dip"
+        android:layout_marginTop="8.0dip"
+        android:alpha="0.0"
+        android:layout_marginEnd="70.0dip"
+        android:backgroundTint="#ff007aff"
+        app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@id/progress_circular" />
+    <View
+        android:id="@id/dot_3"
+        android:background="@drawable/circle_bg"
+        android:layout_width="4.0dip"
+        android:layout_height="4.0dip"
+        android:layout_marginBottom="60.0dip"
+        android:alpha="0.0"
+        android:layout_marginStart="32.0dip"
+        android:backgroundTint="#ff007aff"
+        app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@id/progress_circular" />
+    <View
+        android:id="@id/dot_4"
+        android:background="@drawable/circle_bg"
+        android:layout_width="4.0dip"
+        android:layout_height="4.0dip"
+        android:layout_marginTop="85.0dip"
+        android:alpha="0.0"
+        android:layout_marginStart="23.0dip"
+        android:backgroundTint="#ff007aff"
+        app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@id/progress_circular" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@id/done_anim"
+        android:layout_width="112.0dip"
+        android:layout_height="112.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@id/progress_circular"
+        app:layout_constraintStart_toStartOf="@id/progress_circular"
+        app:layout_constraintTop_toTopOf="@id/progress_circular"
+        app:lottie_autoPlay="false"
+        app:lottie_rawRes="@raw/subsc_success_anim" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="18.5dip"
+        android:textColor="@color/pro_main_text"
+        android:gravity="center"
+        android:id="@id/progress_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.0dip"
+        app:customFont="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_circular" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="18.5dip"
+        android:textColor="@color/pro_main_text"
+        android:gravity="center"
+        android:id="@id/progress_title_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:customFont="2"
+        app:layout_constraintBottom_toBottomOf="@id/progress_title"
+        app:layout_constraintStart_toEndOf="@id/progress_title"
+        app:layout_constraintTop_toTopOf="@id/progress_title" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/constraintLayout2"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/width_match_parent_max_492">
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="14.199982dip"
+            android:textColor="@color/pro_sub_text"
+            android:id="@id/txt_contain_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.0dip"
+            android:text="@string/this_action_can_contain_ads"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <ProgressBar
+            android:id="@id/progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:max="100"
+            android:progressDrawable="@drawable/ic_scanner_progress_custom"
+            android:layout_marginHorizontal="16.0dip"
+            app:layout_constraintBottom_toTopOf="@id/txt_contain_ads"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="16.75dip"
+            android:textColor="@color/pro_main_text"
+            android:id="@id/txt_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            app:customFont="2"
+            app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+            app:layout_constraintEnd_toEndOf="@id/progress_bar"
+            app:layout_constraintStart_toStartOf="@id/progress_bar"
+            app:layout_constraintTop_toTopOf="@id/progress_bar" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="16.75dip"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_open"
+            android:background="@drawable/ripple_border"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:text="@string/auto_open_in_3_second"
+            android:backgroundTint="#ff007aff"
+            android:backgroundTintMode="add"
+            android:layout_marginHorizontal="16.0dip"
+            app:customFont="2"
+            app:layout_constraintBottom_toTopOf="@id/txt_contain_ads" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rcv_optimize"
+            android:paddingLeft="16.0dip"
+            android:paddingTop="16.0dip"
+            android:paddingRight="16.0dip"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:overScrollMode="never"
+            android:paddingHorizontal="16.0dip"
+            app:layout_constraintBottom_toTopOf="@id/progress_bar"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

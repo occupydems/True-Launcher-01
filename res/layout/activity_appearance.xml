@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="16.75sp"
+        android:textColor="@color/appearance_text_color"
+        android:id="@id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:text="@string/settings"
+        android:drawablePadding="8.0dip"
+        android:drawableStart="@drawable/ic_arrow_left_blue"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_title" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="16.75sp"
+        android:textColor="@color/appearance_text_color"
+        android:gravity="center_vertical"
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:text="@string/appearance"
+        android:drawablePadding="4.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:customFont="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/list_appearance"
+        android:background="@drawable/bg_item_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="32.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tv_back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

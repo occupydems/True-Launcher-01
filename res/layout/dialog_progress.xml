@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/bg_dialog_40"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="18.0dip"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="32.0dip"
+        android:text="@string/preparing_to_apply_icon_pack"
+        android:layout_marginHorizontal="32.0dip"
+        app:customFont="6"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="32.0dip"
+        android:text="@string/prepare_icon_pack_message"
+        android:layout_marginHorizontal="32.0dip"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <ProgressBar
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:indeterminate="true"
+        app:indicatorColor="#ffcbcccf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintWidth_percent="0.75"
+        app:trackColor="#ff323a47" />
+</androidx.constraintlayout.widget.ConstraintLayout>

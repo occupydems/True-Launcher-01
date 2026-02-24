@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="30.0dip"
+        android:id="@id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:contentDescription="@string/app_name"
+        app:customFont="2"
+        app:layout_constraintBottom_toTopOf="@id/progress_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <ProgressBar
+        android:id="@id/progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:indeterminate="true"
+        android:layout_marginVertical="@dimen/margin_16dp"
+        app:indicatorColor="#ffcbcccf"
+        app:layout_constraintBottom_toTopOf="@id/action_contain_ads"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:trackColor="#ff323a47" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="14.0dip"
+        android:textColor="#ff000000"
+        android:gravity="center"
+        android:id="@id/action_contain_ads"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="@dimen/bottom_action_ads"
+        android:text="@string/this_action_can_contain_ads"
+        android:layout_marginHorizontal="16.0dip"
+        app:customFont="1"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <FrameLayout
+        android:id="@id/ad_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

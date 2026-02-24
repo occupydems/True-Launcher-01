@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="28.5dip"
+        android:textColor="@color/pro_main_text"
+        android:id="@id/label"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="@string/themes"
+        android:includeFontPadding="false"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="8.0dip"
+        app:customFont="2"
+        app:layout_constraintEnd_toStartOf="@id/btn_pick_gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/btn_reset"
+        android:background="@drawable/rounded_button_bg"
+        android:padding="8.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:src="@drawable/ic_undo"
+        android:layout_marginEnd="10.0dip"
+        android:backgroundTint="@color/theme_transparent_material"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="@id/label"
+        app:layout_constraintEnd_toStartOf="@id/btn_search"
+        app:layout_constraintTop_toTopOf="@id/label"
+        app:layout_goneMarginEnd="16.0dip" />
+    <ImageView
+        android:id="@id/btn_pick_gallery"
+        android:background="@drawable/rounded_button_bg"
+        android:padding="8.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:src="@drawable/ic_system_photo"
+        android:layout_marginEnd="10.0dip"
+        android:backgroundTint="@color/theme_transparent_material"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="@id/label"
+        app:layout_constraintEnd_toStartOf="@id/btn_reset"
+        app:layout_constraintTop_toTopOf="@id/label"
+        app:layout_goneMarginEnd="16.0dip"
+        app:tint="@color/pro_main_text" />
+    <ImageView
+        android:id="@id/btn_search"
+        android:background="@drawable/rounded_button_bg"
+        android:padding="10.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:src="@drawable/ic_search_theme"
+        android:layout_marginEnd="8.0dip"
+        android:backgroundTint="@color/theme_transparent_material"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="@id/label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label"
+        app:layout_goneMarginEnd="16.0dip" />
+    <FrameLayout
+        android:id="@id/ads_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8.0dip"
+        app:layout_constraintTop_toBottomOf="@id/label" />
+    <FrameLayout
+        android:id="@id/main_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="3.0dip"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintTop_toBottomOf="@id/ads_container" />
+    <com.truelib.common.view.BottomNavView
+        android:id="@id/bottom_nav"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

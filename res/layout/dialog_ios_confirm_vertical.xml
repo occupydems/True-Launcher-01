@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/dialog_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="17.0dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000"
+        android:gravity="center"
+        android:id="@id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="19.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textSize="13.0dip"
+        android:textColor="#ff000000"
+        android:gravity="center"
+        android:id="@id/dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintTop_toBottomOf="@id/dialog_title" />
+    <FrameLayout
+        android:id="@id/custom_view_container"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="24.0dip"
+        android:layout_marginHorizontal="24.0dip"
+        app:layout_constraintTop_toBottomOf="@id/dialog_content" />
+    <View
+        android:id="@id/divider_top"
+        android:background="@color/divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="8.0dip"
+        app:layout_constraintTop_toBottomOf="@id/custom_view_container" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textColor="@color/red_color"
+        android:gravity="center"
+        android:id="@id/top_button"
+        android:background="@drawable/confirm_button_background"
+        android:paddingTop="9.0dip"
+        android:paddingBottom="9.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discard"
+        android:paddingVertical="9.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_top" />
+    <View
+        android:id="@id/divider_neutral"
+        android:background="@color/divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        app:layout_constraintTop_toBottomOf="@id/top_button" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textColor="@color/ios_button_color"
+        android:gravity="center"
+        android:id="@id/middle_button"
+        android:background="@drawable/confirm_button_background"
+        android:paddingTop="9.0dip"
+        android:paddingBottom="9.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_edit"
+        android:paddingVertical="9.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_neutral" />
+    <View
+        android:id="@id/divider_save"
+        android:background="@color/divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        app:layout_constraintTop_toBottomOf="@id/middle_button" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textColor="@color/ios_button_color"
+        android:gravity="center"
+        android:id="@id/bottom_button"
+        android:background="@drawable/confirm_button_background_left_right"
+        android:paddingTop="9.0dip"
+        android:paddingBottom="9.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:paddingVertical="9.0dip"
+        app:customFont="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>

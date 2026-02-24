@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root"
+    android:background="@color/start_custom_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textColor="#ff000000"
+        android:gravity="center"
+        android:id="@id/label"
+        android:padding="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_language"
+        android:text="@string/language"
+        app:customFont="2"
+        app:layout_constraintEnd_toEndOf="@id/list"
+        app:layout_constraintStart_toStartOf="@id/list"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textColor="#ff007aff"
+        android:id="@id/done_button"
+        android:background="@drawable/get_started_background"
+        android:padding="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:layout_marginEnd="4.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/label"
+        app:layout_constraintEnd_toEndOf="@id/list"
+        app:layout_constraintTop_toTopOf="@id/label" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="12.0dip"
+        android:textColor="#993c3c43"
+        android:id="@id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18.0dip"
+        android:text="@string/preferred_languages"
+        android:textAllCaps="true"
+        android:layout_marginStart="32.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/list"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:paddingVertical="8.0dip"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue"
+        app:layout_constraintEnd_toStartOf="@id/native_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/btn_continue"
+        android:background="@drawable/bg_done"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintBottom_toTopOf="@id/native_view"
+        app:layout_constraintEnd_toStartOf="@id/native_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="60.0dip">
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="16.75dip"
+            android:textColor="#ffffffff"
+            android:paddingTop="14.0dip"
+            android:paddingBottom="14.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_text"
+            android:paddingVertical="14.0dip" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_icon_next"
+            android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/native_view"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/_16dp"
+        android:paddingTop="@dimen/_12dp"
+        android:paddingRight="@dimen/_16dp"
+        android:paddingBottom="@dimen/_4dp"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:paddingHorizontal="@dimen/_16dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <FrameLayout
+        android:id="@id/native_right"
+        android:background="@drawable/white_background_radius_medium"
+        android:paddingLeft="8.0dip"
+        android:paddingTop="4.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingBottom="4.0dip"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/done_button"
+        app:layout_constraintWidth_percent="0.5" />
+    <FrameLayout
+        android:id="@id/loading_view"
+        android:background="#4d000000"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/progress_item"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:src="@drawable/ic_ios_spinner_white" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+.class final synthetic Lcom/google/android/gms/internal/ads/tS0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/vS;
+
+
+# instance fields
+.field private final synthetic a:I
+
+
+# direct methods
+.method synthetic constructor <init>(I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lcom/google/android/gms/internal/ads/tS0;->a:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    check-cast p1, Lcom/google/android/gms/internal/ads/kc;
+
+    .line 2
+    .line 3
+    sget v0, Lcom/google/android/gms/internal/ads/LS0;->d0:I
+
+    .line 4
+    .line 5
+    iget v0, p0, Lcom/google/android/gms/internal/ads/tS0;->a:I
+
+    .line 6
+    .line 7
+    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/kc;->Z(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+.end method

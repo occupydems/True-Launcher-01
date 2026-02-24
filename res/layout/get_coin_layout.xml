@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="16.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/ic_get_coin"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:src="@drawable/ic_coin_free"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="18.0dip"
+        android:textColor="@color/theme_text_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_coin_free"
+        android:layout_marginStart="12.0dip"
+        app:customFont="2"
+        app:layout_constraintBottom_toBottomOf="@id/ic_get_coin"
+        app:layout_constraintStart_toEndOf="@id/ic_get_coin"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_get_coin">
+        <com.truelib.themes.theme_pack.view.ItemGetCoin
+            android:id="@id/watch_ad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:bonusCoin="+50"
+            app:iconAction="@drawable/ic_theme_coin"
+            app:nameAction="@string/ads_count_reward" />
+        <com.truelib.themes.theme_pack.view.ItemGetCoin
+            android:id="@id/share_on_facebook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            app:bonusCoin="+50"
+            app:iconAction="@drawable/ic_theme_coin"
+            app:nameAction="@string/share_on_facebook" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

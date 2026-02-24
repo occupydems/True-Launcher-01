@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/appearance_bg_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/img_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:transitionName="image_transition" />
+    <ImageButton
+        android:id="@id/btn_close"
+        android:background="@color/transparent_bg"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:src="@drawable/ai_ic_close" />
+</FrameLayout>

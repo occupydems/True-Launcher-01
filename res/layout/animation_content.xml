@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/new_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@id/settings_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginHorizontal="@dimen/medium_margin"
+        app:cardCornerRadius="@dimen/radius_item_settings"
+        app:cardElevation="0.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginVertical="@dimen/small_margin">
+            <com.truelib.settings.custom.TextCustomFont
+                android:textSize="@dimen/medium_text_size"
+                android:textColor="@color/text_primary"
+                android:ellipsize="end"
+                android:id="@id/resume_anim"
+                android:paddingTop="@dimen/item_settings_margin"
+                android:paddingBottom="@dimen/item_settings_margin"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/height_item_settings"
+                android:text="@string/resume_animation"
+                android:lines="1"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:paddingVertical="@dimen/item_settings_margin"
+                app:layout_constraintEnd_toStartOf="@id/resume_anim_setting"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.truelib.settings.custom.SwitchView
+                android:id="@id/resume_anim_setting"
+                android:duplicateParentState="true"
+                android:layout_width="@dimen/width_switch_view"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium_margin"
+                app:layout_constraintBottom_toBottomOf="@id/resume_anim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/resume_anim"
+                app:layout_constraintTop_toTopOf="@id/resume_anim" />
+            <View
+                android:id="@id/divider"
+                android:background="@color/divider_color"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginStart="@dimen/medium_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/resume_anim" />
+            <com.truelib.settings.custom.TextCustomFont
+                android:textSize="@dimen/medium_text_size"
+                android:textColor="@color/text_primary"
+                android:ellipsize="end"
+                android:id="@id/open_anim"
+                android:paddingTop="@dimen/item_settings_margin"
+                android:paddingBottom="@dimen/item_settings_margin"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/height_item_settings"
+                android:text="@string/open_close_apps_animation"
+                android:lines="1"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:paddingVertical="@dimen/item_settings_margin"
+                app:layout_constraintEnd_toStartOf="@id/open_anim_setting"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
+            <com.truelib.settings.custom.SwitchView
+                android:id="@id/open_anim_setting"
+                android:duplicateParentState="true"
+                android:layout_width="@dimen/width_switch_view"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium_margin"
+                app:layout_constraintBottom_toBottomOf="@id/open_anim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/open_anim"
+                app:layout_constraintTop_toTopOf="@id/open_anim" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

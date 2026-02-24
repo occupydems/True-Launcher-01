@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@id/set_default_warning"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/radius_item_settings"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@id/settings_icon"
+            android:layout_width="@dimen/setting_icon_size"
+            android:layout_height="@dimen/setting_icon_size"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:src="@drawable/warning"
+            android:layout_marginStart="@dimen/medium_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="16.0dip"
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/set_default_launcher"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            app:customFont="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/settings_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textColor="#993c3c43"
+            android:id="@id/description"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/default_app_warning"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/settings_icon"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+        <View
+            android:id="@id/divider_line"
+            android:background="@color/divider_color"
+            android:layout_width="0.0dip"
+            android:layout_height="1.0px"
+            android:layout_marginTop="@dimen/small_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="16.0dip"
+            android:textColor="#ff007aff"
+            android:gravity="center"
+            android:id="@id/action_set_default"
+            android:background="@drawable/selector_clickable"
+            android:padding="@dimen/small_margin"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/set_default_launcher"
+            app:customFont="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_line" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

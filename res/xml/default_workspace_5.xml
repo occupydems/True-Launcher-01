@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorites
+    xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
+    <include
+        launcher:workspace="@xml/dw_tablet_hotseat" />
+    <customwidget
+        launcher:providerId="2"
+        launcher:screen="0"
+        launcher:spanX="4"
+        launcher:spanY="2"
+        launcher:x="0"
+        launcher:y="0" />
+    <resolve
+        launcher:screen="0"
+        launcher:x="4"
+        launcher:y="0">
+        <favorite
+            launcher:uri="\#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_FILES;end" />
+        <favorite
+            launcher:className="com.sec.android.app.myfiles.external.ui.MainActivity"
+            launcher:packageName="com.sec.android.app.myfiles" />
+        <favorite
+            launcher:className="com.android.fileexplorer.FileExplorerTabActivity"
+            launcher:packageName="com.mi.android.globalFileexplorer" />
+        <favorite
+            launcher:regex="file|storage" />
+    </resolve>
+    <favorite
+        launcher:className="com.android.launcher3.LoadingLauncherActivity"
+        launcher:packageName="com.truelauncher.ioslaunches"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="2" />
+    <favorite
+        launcher:className="com.android.launcher3.feature.weather.LoadingWeatherActivity"
+        launcher:packageName="com.truelauncher.ioslaunches"
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="2" />
+    <resolve
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="2">
+        <favorite
+            launcher:uri="\#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_CALENDAR;end" />
+        <favorite
+            launcher:regex="calendar|schedule" />
+    </resolve>
+    <resolve
+        launcher:screen="0"
+        launcher:x="4"
+        launcher:y="3">
+        <favorite
+            launcher:uri="\#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MUSIC;end" />
+        <favorite
+            launcher:className="com.google.android.apps.youtube.music.activities.MusicActivity"
+            launcher:packageName="com.google.android.apps.youtube.music" />
+        <favorite
+            launcher:regex="music|player|media" />
+    </resolve>
+    <resolve
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="3">
+        <favorite
+            launcher:uri="\#Intent;action=android.intent.action.MAIN;category=android.intent.category.VOICE;end" />
+        <favorite
+            launcher:className="com.sec.android.app.voicenote.main.VNMainActivity"
+            launcher:packageName="com.sec.android.app.voicenote" />
+        <favorite
+            launcher:className="com.miui.player.ui.MusicActivity"
+            launcher:packageName="com.miui.player" />
+        <favorite
+            launcher:packageName="com.samsung.android.app.notes" />
+        <favorite
+            launcher:packageName="com.samsung.android.snote" />
+        <favorite
+            launcher:packageName="com.google.android.keep" />
+        <favorite
+            launcher:regex="record|voice|note|write" />
+    </resolve>
+    <resolve
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="3">
+        <favorite
+            launcher:uri="\#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_CALCULATOR;end" />
+        <favorite
+            launcher:className="com.sec.android.app.camera.Camera"
+            launcher:packageName="com.sec.android.app.camera" />
+        <favorite
+            launcher:className="com.sec.android.app.popupcalculator.Calculator"
+            launcher:packageName="com.sec.android.app.popupcalculator" />
+        <favorite
+            launcher:regex="calculator|camera" />
+    </resolve>
+    <resolve
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="3">
+        <favorite
+            launcher:regex="reminder|todo|task" />
+    </resolve>
+    <folder
+        launcher:screen="0"
+        launcher:title="Google"
+        launcher:x="3"
+        launcher:y="3">
+        <favorite
+            launcher:className="com.google.android.googlequicksearchbox.SearchActivity"
+            launcher:packageName="com.google.android.googlequicksearchbox"
+            launcher:screen="0" />
+        <favorite
+            launcher:className="com.google.android.gm.ConversationListActivityGmail"
+            launcher:packageName="com.google.android.gm"
+            launcher:screen="1" />
+        <favorite
+            launcher:className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"
+            launcher:packageName="com.google.android.youtube"
+            launcher:screen="2" />
+        <favorite
+            launcher:className="com.google.android.apps.docs.app.NewMainProxyActivity"
+            launcher:packageName="com.google.android.apps.docs"
+            launcher:screen="3" />
+        <favorite
+            launcher:className="com.google.android.talk.SigningInActivity"
+            launcher:packageName="com.google.android.talk"
+            launcher:screen="4" />
+        <favorite
+            launcher:className="com.google.android.apps.photos.home.HomeActivity"
+            launcher:packageName="com.google.android.apps.photos"
+            launcher:screen="5" />
+        <favorite
+            launcher:className="com.google.android.youtube.videos.EntryPoint"
+            launcher:packageName="com.google.android.videos"
+            launcher:screen="6" />
+        <favorite
+            launcher:className="com.google.android.maps.MapsActivity"
+            launcher:packageName="com.google.android.apps.maps"
+            launcher:screen="7" />
+    </folder>
+</favorites>

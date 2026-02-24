@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/new_selector_clickable"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/divider_line"
+        android:background="@color/divider_color"
+        android:layout_width="0.0dip"
+        android:layout_height="1.0px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/content_text" />
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@id/arrowImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_setting_arrow"
+        android:layout_marginEnd="@dimen/medium_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/settings_icon"
+        android:padding="@dimen/dp4"
+        android:layout_width="@dimen/setting_icon_size"
+        android:layout_height="@dimen/setting_icon_size"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginVertical="@dimen/dp8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/red_dot"
+        android:background="@drawable/ic_red_dot"
+        android:visibility="gone"
+        android:layout_width="8.0dip"
+        android:layout_height="8.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_marginRight="4.0dip"
+        app:layout_constraintRight_toRightOf="@id/settings_icon"
+        app:layout_constraintTop_toTopOf="@id/settings_icon" />
+    <LinearLayout
+        android:gravity="start"
+        android:orientation="vertical"
+        android:id="@id/content_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/arrowImage"
+        app:layout_constraintStart_toEndOf="@id/settings_icon"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.truelib.settings.custom.TextCustomFont
+            android:textSize="@dimen/medium_text_size"
+            android:textColor="@color/color_content_1st"
+            android:gravity="start"
+            android:id="@id/settings_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_settings_margin"
+            android:layout_marginBottom="@dimen/item_settings_margin"
+            android:layout_marginVertical="@dimen/item_settings_margin" />
+        <com.truelib.settings.custom.TextCustomFont
+            android:textSize="@dimen/small_text_size"
+            android:gravity="start"
+            android:id="@id/description"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:customFont="1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

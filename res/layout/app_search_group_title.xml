@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8.0dip"
+    android:layout_marginRight="8.0dip"
+    android:layout_marginBottom="4.0dip"
+    android:layout_marginHorizontal="8.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="14.0dip"
+        android:textColor="@color/app_search_title_primary"
+        android:ellipsize="end"
+        android:id="@id/txt_title"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:lines="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingVertical="8.0dip"
+        app:customFont="2" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="14.0dip"
+        android:textColor="@color/app_search_title_secondary"
+        android:ellipsize="end"
+        android:id="@id/textAction"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:lines="1"
+        android:drawablePadding="@dimen/dp6"
+        android:layout_centerVertical="true"
+        android:drawableEnd="@drawable/ic_arrow_find_in_app"
+        android:layout_alignEnd="@id/txt_title"
+        android:layout_alignParentEnd="true"
+        android:paddingVertical="8.0dip"
+        app:customFont="2" />
+    <View
+        android:id="@id/divider"
+        android:background="@color/app_search_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/txt_title" />
+</RelativeLayout>

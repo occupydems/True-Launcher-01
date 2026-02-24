@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/tip_icon"
+        android:layout_width="18.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginTop="12.0dip"
+        android:src="@drawable/clock_tip_icon"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintBottom_toTopOf="@id/tip_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/clock_main_text_color"
+        android:id="@id/tip_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/optimize_alarms"
+        android:layout_marginStart="4.0dip"
+        app:customFont="2"
+        app:layout_constraintBottom_toBottomOf="@id/tip_icon"
+        app:layout_constraintEnd_toStartOf="@id/tip_button"
+        app:layout_constraintStart_toEndOf="@id/tip_icon"
+        app:layout_constraintTop_toTopOf="@id/tip_icon" />
+    <com.truelib.common.TextViewCustomFont
+        android:textColor="@color/clock_sub_text_color"
+        android:id="@id/tip_content"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:text="@string/learn_how_to_make_alarms_more_stable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tip_title"
+        app:layout_constraintStart_toStartOf="@id/tip_icon"
+        app:layout_constraintTop_toBottomOf="@id/tip_icon" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/clock_selected_color"
+        android:id="@id/tip_button"
+        android:background="@drawable/clock_tip_button_bg"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="4.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingBottom="4.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/optimize"
+        android:layout_marginEnd="16.0dip"
+        android:paddingHorizontal="10.0dip"
+        android:paddingVertical="4.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:background="@color/clock_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        android:id="@id/play_pause"
+        android:background="@drawable/circle_bg"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:src="@drawable/clock_play"
+        android:backgroundTint="#40ff9f0a" />
+    <ImageButton
+        android:id="@id/cancel"
+        android:background="@drawable/circle_bg"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:src="@drawable/clock_close_x"
+        android:layout_marginStart="10.0dip"
+        android:layout_toEndOf="@id/play_pause"
+        android:backgroundTint="#5c787880" />
+    <TextView
+        android:textSize="28.0dip"
+        android:textColor="#ffff9f0a"
+        android:gravity="center"
+        android:id="@id/count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:text="00:00"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_content_inset_material">24.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80.0dip</dimen>
+    <dimen name="abc_action_bar_default_height_material">64.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
+    <dimen name="ad_body_padding_end">150.0dip</dimen>
+    <dimen name="ad_buttom_max_width">130.0dip</dimen>
+    <dimen name="all_app_native_padding_small">10.0dip</dimen>
+    <dimen name="all_apps_background_canvas_height">525.0dip</dimen>
+    <dimen name="all_apps_background_canvas_width">850.0dip</dimen>
+    <dimen name="all_apps_native_button_margin_top">8.0dip</dimen>
+    <dimen name="all_apps_native_content_margin">18.0dip</dimen>
+    <dimen name="all_apps_native_padding">18.0dip</dimen>
+    <dimen name="all_apps_text_padding_start">106.0dip</dimen>
+    <dimen name="app_name_text_size">18.0dip</dimen>
+    <dimen name="card_round_corner_search">20.0dip</dimen>
+    <item type="dimen" name="color_picker_count">12.0</item>
+    <item type="dimen" name="content_percent">0.75</item>
+    <item type="dimen" name="content_price_width">0.7</item>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="drag_flingToDeleteMinVelocity">-1000.0dip</dimen>
+    <dimen name="folder_icon_radius">14.0dip</dimen>
+    <dimen name="folder_icon_radius_clip">18.0dip</dimen>
+    <dimen name="headline_padding_start_mark_inline">130.0dip</dimen>
+    <item type="dimen" name="height_item_banner">0.1</item>
+    <dimen name="highlight_padding">80.0dip</dimen>
+    <item type="dimen" name="icon_app_size">0.055</item>
+    <item type="dimen" name="icon_next_size">0.023</item>
+    <dimen name="inline_ad_mark_margin_top">21.0dip</dimen>
+    <dimen name="install_native_margin">16.0dip</dimen>
+    <dimen name="install_open_btn_margin">24.0dip</dimen>
+    <dimen name="item_close_margin">48.0dip</dimen>
+    <dimen name="language_content_margin_horizontal">76.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
+    <dimen name="mtrl_toolbar_default_height">64.0dip</dimen>
+    <dimen name="my_theme_button_size">154.0dip</dimen>
+    <dimen name="native_ad_image_size">70.0dip</dimen>
+    <dimen name="onboarding_margin_horizontal">60.0dip</dimen>
+    <dimen name="onboarding_native_padding_horizontal">60.0dip</dimen>
+    <dimen name="pro_subsc_content_width">492.0dip</dimen>
+    <dimen name="sample_icon_size">130.0dip</dimen>
+    <item type="dimen" name="screen_width_ratio">0.6</item>
+    <dimen name="size_100">150.0dip</dimen>
+    <dimen name="size_16">52.0dip</dimen>
+    <dimen name="size_24">20.0dip</dimen>
+    <item type="dimen" name="start_page_ad_width">0.8</item>
+    <dimen name="start_page_bottom_margin">70.0dip</dimen>
+    <item type="dimen" name="start_page_image_width">0.65</item>
+    <dimen name="subsc_content_padding_horizontal">52.0dip</dimen>
+    <dimen name="text_size_12">14.0sp</dimen>
+    <dimen name="theme_profile_extra_margin">20.0dip</dimen>
+    <dimen name="theme_profile_margin">32.0dip</dimen>
+    <dimen name="wallpaper_item_radius">18.0dip</dimen>
+    <dimen name="wallpaper_margin_horizontal">48.0dip</dimen>
+    <item type="dimen" name="wallpaper_preview_width_ratio">0.23</item>
+    <item type="dimen" name="weather_width_screen">0.7</item>
+    <dimen name="widget_section_indent">56.0dip</dimen>
+</resources>

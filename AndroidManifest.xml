@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.truelauncher.ioslaunches"
+    platformBuildVersionCode="27"
+    platformBuildVersionName="8.1.0"
+    android:compileSdkVersion="36"
+    android:compileSdkVersionCodename="16"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Allows the app to set the system wallpaper. -->
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+    <!-- Allows the app to set the system wallpaper size hints. -->
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission
+        android:name="android.permission.BIND_APPWIDGET" />
+    <!-- Allows the app to read the contents of your shared storage. -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <!-- Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the phone and allow the app to slow down the overall phone by always running. -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Allows an application to request deletion of packages. -->
+    <uses-permission
+        android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <!-- Allows an app to see all installed packages. -->
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <!-- Allows the app to read data about your contacts stored on your phone. Apps will also have access to the accounts on your phone that have created contacts. This may include accounts created by apps you have installed. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge. -->
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+    <!-- This app can read all calendar events stored on your phone and share or save your calendar data. -->
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+    <!-- This app can get your precise location from location services while the app is in use. Location services for your device must be turned on for the app to get location. This may increase battery usage. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- This app can get your approximate location from location services while the app is in use. Location services for your device must be turned on for the app to get location. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Allows the app to set an alarm in an installed alarm clock app. Some alarm clock apps may not implement this feature. -->
+    <uses-permission
+        android:name="com.android.alarm.permission.SET_ALARM" />
+    <!-- Allows the app to read locations from your media collection. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <!-- Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet. -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <!-- Allows the app to view information about network connections such as which networks exist and are connected. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Allows a publisher app to access a valid advertising ID directly or indirectly. -->
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <permission
+        android:label="Read theme data"
+        android:name="com.truelauncher.ioslaunches.READ_THEME_PERMISSION"
+        android:protectionLevel="normal" />
+    <permission
+        android:label="Write theme data"
+        android:name="com.truelauncher.ioslaunches.WRITE_THEME_PERMISSION"
+        android:protectionLevel="normal" />
+    <!-- Allows the app to control the vibrator. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- Allows the app to prevent the phone from going to sleep. -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <!-- This app can take pictures and record videos using the camera while the app is in use. -->
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+    <!-- Allows the app to access the basic telephony features of the device. -->
+    <uses-permission
+        android:name="android.permission.READ_BASIC_PHONE_STATE" />
+    <!-- This app can schedule work to happen at a desired time in the future. This also means that the app can run when you’re not actively using the device. -->
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <!-- Allows the app to show notifications -->
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Allows the app to use biometric hardware for authentication -->
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC" />
+    <!-- Allows the app to use fingerprint hardware for authentication -->
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+    <queries>
+        <intent>
+            <action
+                android:name="android.intent.action.VIEW" />
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+            <data
+                android:scheme="https" />
+        </intent>
+        <intent>
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+        <intent>
+            <action
+                android:name="android.intent.action.INSERT" />
+            <data
+                android:mimeType="vnd.android.cursor.dir/event" />
+        </intent>
+        <intent>
+            <action
+                android:name="android.intent.action.VIEW" />
+            <data
+                android:scheme="sms" />
+        </intent>
+        <intent>
+            <action
+                android:name="android.intent.action.DIAL" />
+            <data
+                android:path="tel:" />
+        </intent>
+        <intent>
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+        <intent>
+            <action
+                android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+        </intent>
+        <package
+            android:name="com.facebook.katana" />
+        <package
+            android:name="com.applisto.appcloner" />
+    </queries>
+    <!-- Allows an application to access AdId API. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+    <!-- Allows an application to access AdServices Attribution APIs. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+    <!-- Allows an application to access AdServices Topics API. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
+    <!-- Allows the app to make use of foreground services. -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Allows the user to purchase items through Google Play from within this app. -->
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+    <!-- Allows apps to accept cloud to device messages sent by the app's service. Using this service will incur data usage. Malicious apps could cause excess data usage. -->
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- Allows the app to retrieve its install referrer information. -->
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <permission
+        android:name="com.truelauncher.ioslaunches.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="com.truelauncher.ioslaunches.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <application
+        android:theme="@style/LauncherTheme"
+        android:label="True Launcher 3"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.android.launcher3.LauncherApplication"
+        android:testOnly="false"
+        android:restoreAnyVersion="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="@bool/config_largeHeap"
+        android:supportsRtl="false"
+        android:extractNativeLibs="false"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+        <activity
+            android:theme="@style/SplashLauncher"
+            android:label="True Launcher 3"
+            android:icon="@mipmap/ic_launcher"
+            android:name="com.android.launcher3.LoadingLauncherActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:autoRemoveFromRecents="true"
+            android:roundIcon="@mipmap/ic_launcher">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="app"
+                    android:host="apps.supenient.vn"
+                    android:pathPrefix="/launcher" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="http"
+                    android:host="apps.supenient.vn"
+                    android:pathPrefix="/launcher" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="apps.supenient.vn"
+                    android:pathPrefix="/launcher" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/settings_button_text"
+            android:name="com.android.launcher3.remove.UninstallLauncherActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:label="True Launcher 3"
+            android:icon="@mipmap/ic_launcher"
+            android:name="com.android.launcher3.Launcher"
+            android:enabled="true"
+            android:exported="true"
+            android:taskAffinity=""
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:configChanges="keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:windowSoftInputMode="adjustResize"
+            android:autoRemoveFromRecents="true"
+            android:resumeWhilePausing="true"
+            android:roundIcon="@mipmap/ic_launcher">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.HOME" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.MONKEY" />
+                <category
+                    android:name="android.intent.category.LAUNCHER_APP" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:name="com.android.launcher3.feature.photo.ChoosePhotoActivity"
+            android:exported="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.color.ColorPickerActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <receiver
+            android:name="com.android.launcher3.InstallShortcutReceiver"
+            android:permission="com.android.launcher.permission.INSTALL_SHORTCUT"
+            android:enabled="@bool/enable_install_shortcut_api"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.launcher3.SessionCommitReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.content.pm.action.SESSION_COMMITTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.launcher3.AppWidgetsRestoredReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_HOST_RESTORED" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.android.launcher3.uioverrides.dynamicui.WallpaperManagerCompatVL$ColorExtractionService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":wallpaper_chooser" />
+        <service
+            android:label="@string/icon_badging_service_title"
+            android:name="com.android.launcher3.notification.LauncherNotificationService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:enabled="@bool/notification_badging_enabled"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.android.launcher3.firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/CustomDialogTheme"
+            android:label="@string/action_add_to_workspace"
+            android:name="com.android.launcher3.dragndrop.AddItemActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:autoRemoveFromRecents="true">
+            <intent-filter>
+                <action
+                    android:name="android.content.pm.action.CONFIRM_PIN_SHORTCUT" />
+                <action
+                    android:name="android.content.pm.action.CONFIRM_PIN_APPWIDGET" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/TransparentSystemBar"
+            android:name="com.android.launcher3.feature.weather.WeatherActivityDetail"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:theme="@style/SplashLauncher"
+            android:label="@string/weather"
+            android:icon="@mipmap/weather_icon"
+            android:name="com.android.launcher3.feature.weather.LoadingWeatherActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SplashLauncher"
+            android:label="True Launcher 3"
+            android:icon="@mipmap/ic_launcher"
+            android:name="com.android.launcher3.feature.clock.LoadingClockActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:autoRemoveFromRecents="true"
+            android:roundIcon="@mipmap/ic_launcher">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SHOW_ALARMS" />
+                <action
+                    android:name="android.intent.action.SHOW_TIMERS" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.android.launcher3.LauncherProvider"
+            android:exported="false"
+            android:authorities="com.truelauncher.ioslaunches.settings" />
+        <activity
+            android:theme="@style/OnboardTransparentSystemBar"
+            android:name="com.truelib.onboarding.language.LauncherLanguageActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/Theme.CompletelyTransparent"
+            android:name="com.android.launcher3.widget.clock.setting.TimeZonePickerActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/SplashLauncher"
+            android:label="True Launcher 3"
+            android:icon="@mipmap/ic_launcher"
+            android:name="com.android.launcher3.theme.LoadingThemePackActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:autoRemoveFromRecents="true"
+            android:roundIcon="@mipmap/ic_launcher">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="launcher" />
+                <data
+                    android:host="phoneos" />
+                <data
+                    android:pathPrefix="/wallpaper/share/" />
+                <data
+                    android:pathPrefix="/theme/share/" />
+                <data
+                    android:pathPrefix="/icon/share/" />
+                <data
+                    android:pathPrefix="/wallpaper/collection/" />
+                <data
+                    android:pathPrefix="/wallpaper/featured/" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="http" />
+                <data
+                    android:scheme="https" />
+                <data
+                    android:host="launcherios.supenient.vn" />
+                <data
+                    android:pathPrefix="/wallpaper/share/" />
+                <data
+                    android:pathPrefix="/theme/share/" />
+                <data
+                    android:pathPrefix="/icon/share/" />
+                <data
+                    android:pathPrefix="/wallpaper/collection/" />
+                <data
+                    android:pathPrefix="/wallpaper/featured/" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.CompletelyTransparent"
+            android:name="com.android.launcher3.activities.FreezeActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/OnboardTransparentSystemBar"
+            android:name="com.android.launcher3.ads.StartWallpaperActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:theme="@style/OnboardTransparentSystemBar"
+            android:name="com.android.launcher3.ads.LauncherStartPaymentActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:theme="@style/OnboardTransparentSystemBar"
+            android:name="com.android.launcher3.ads.LauncherOnboardingActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SplashLauncher"
+            android:label="@string/wallpaper"
+            android:icon="@drawable/ic_wallpaper_settings"
+            android:name="com.android.launcher3.splash.LoadingWallpaperSettingsActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:autoRemoveFromRecents="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4566117079181126~3514098002" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED"
+            android:value="false" />
+        <provider
+            android:name="com.android.launcher3.provider.ThemeProvider"
+            android:readPermission="com.truelauncher.ioslaunches.READ_THEME_PERMISSION"
+            android:writePermission="com.truelauncher.ioslaunches.WRITE_THEME_PERMISSION"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.truelauncher.ioslaunches.theme.provider" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.truelauncher.ioslaunches.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="okhttp3.internal.platform.PlatformInitializer"
+                android:value="androidx.startup" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.truelauncher.ioslaunches.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.settingios.SettingLauncherActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.general.GeneralActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.animation.AnimationActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.applabel.ChangeAppNameActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.applibs.AppLibraryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.changed_app_icon.ChangedAppIconActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.hiddenapp.HiddenAppActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/TransparentSystemBar"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.wallpaper.WallpaperSettingsActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.glass.GlassMorphismSettingActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.search.SearchSettingActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.weather.WeatherActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.ai_setting.LauncherAssistantActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.worksapcetransition.WorkspaceTransitionActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.CompletelyTransparent"
+            android:name="com.truelib.settings.authenticate.AuthenticateActivity"
+            android:exported="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.appearance.AppearanceActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.settingios.fragment.LauncherFunctionActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.grid.ScreenGridActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/SettingsActivityTheme"
+            android:label="@string/app_name"
+            android:name="com.truelib.settings.billing.SettingPaymentActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.CompletelyTransparent"
+            android:name="com.truelib.onboarding.guideline.GuideActivity"
+            android:exported="false" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode,ocr,ica" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="text,labels" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/icon_packs"
+            android:icon="@drawable/icon_pack_studio_round"
+            android:name="com.truelib.themes.icon_studio.activity.IconPackActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:name="com.truelib.themes.icon_studio.activity.EditIconActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:name="com.truelib.themes.icon_studio.activity.EditRemoteIconActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:name="com.truelib.themes.icon_studio.activity.EditPreviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:name="com.truelib.themes.icon_studio.activity.IconPreviewActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:name="com.truelib.themes.icon_studio.activity.IconRemotePreviewActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/wallpaper"
+            android:name="com.truelib.themes.wallpaper_pack.view.activity.WallpaperListActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/wallpaper"
+            android:name="com.truelib.themes.wallpaper_pack.view.activity.CollectionListActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/FullScreenWallpaperTheme"
+            android:label="@string/wallpaper"
+            android:name="com.truelib.themes.wallpaper_pack.view.activity.WallpaperCollectionActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/wallpaper"
+            android:name="com.truelib.themes.wallpaper_pack.view.activity.WallpaperDetailActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.theme_pack.ThemePackActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.theme_pack.activity.ThemePreviewActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.theme_pack.activity.ThemeBannerActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.theme_pack.activity.MyThemeNewActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.theme_pack.MyFavoriteNewActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.wallpaper_pack.view.activity.MyWallpaperNewActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.wallpaper_pack.view.activity.WallpaperPreviewActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.phase2.activity.CategoryDetailActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.ThemePack"
+            android:label="@string/themes"
+            android:name="com.truelib.themes.phase2.activity.SearchActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.Clock"
+            android:name="com.truelib.clock.ClockActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:theme="@style/Theme.StrongAlert"
+            android:label="True Launcher 3"
+            android:icon="@mipmap/ic_launcher"
+            android:name="com.truelib.clock.strong_alert.StrongAlertActivity"
+            android:exported="true"
+            android:taskAffinity=".strong_alert.StrongAlertActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:showOnLockScreen="true"
+            android:roundIcon="@mipmap/ic_launcher">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SNOOZE_ALARM" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.truelib.clock.timer.TimerService" />
+        <service
+            android:name="com.truelib.clock.alarm.AlarmService"
+            android:exported="true" />
+        <activity
+            android:theme="@style/Theme.Subscription"
+            android:name="com.truelib.adapter.billing.PurchaseActivity"
+            android:autoRemoveFromRecents="true" />
+        <activity
+            android:theme="@style/Theme.AIPage"
+            android:name="com.truelib.common.activity.AppearanceActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:theme="@style/Theme.AIPage"
+            android:name="com.truelib.common.activity.PhotoViewerActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:theme="@style/Theme.WallpaperPreview"
+            android:name="com.truelib.common.activity.wallpaper_preview.WallpaperPreviewActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.truelib.settingview.language.LanguageActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/Dexter.Internal.Theme.Transparent"
+            android:name="com.karumi.dexter.DexterActivity" />
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+        <meta-data
+            android:name="com.bytedance.sdk.pangle.version"
+            android:value="7.8.5.9" />
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.activity.TTCeilingLandingPageActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity"
+            android:launchMode="standard">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_privacy_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <service
+            android:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService" />
+        <activity
+            android:theme="@style/tt_app_open_ad_no_animation"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_app_open_ad_no_animation_trans"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdTransActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_full_screen_new"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_full_screen_new"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_full_screen_new"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_full_screen_new"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/tt_full_screen_new"
+            android:name="com.bytedance.sdk.openadsdk.activity.TTAdActivity"
+            android:launchMode="standard"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <property
+                android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:enableOnBackInvokedCallback="false" />
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:exported="false"
+            android:authorities="com.truelauncher.ioslaunches.mobileadsinitprovider"
+            android:initOrder="100" />
+        <service
+            android:name="com.google.android.gms.ads.AdService"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
+            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:directBootAware="false" />
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false"
+            android:directBootAware="false" />
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="7.1.1" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter
+                android:priority="-500">
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.truelauncher.ioslaunches.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <provider
+            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+            android:exported="false"
+            android:authorities="com.truelauncher.ioslaunches.AudienceNetworkContentProvider" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+        <activity
+            android:theme="@style/Theme.PlayCore.Transparent"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.pairip.licensecheck.LicenseActivity"
+            android:exported="false" />
+        <provider
+            android:name="com.pairip.licensecheck.LicenseContentProvider"
+            android:exported="false"
+            android:authorities="com.truelauncher.ioslaunches.com.pairip.licensecheck.LicenseContentProvider" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloningMode"
+            android:value="DEFAULT" />
+        <meta-data
+            android:name="com.applisto.appcloner.name"
+            android:value="True Launcher 01" />
+        <meta-data
+            android:name="com.applisto.appcloner.originalName"
+            android:value="True Launcher" />
+        <meta-data
+            android:name="com.applisto.appcloner.originalPackageName"
+            android:value="Y29tLnRydWVsYXVuY2hlci5pb3NsYXVuY2hlcg==" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneNumber"
+            android:value="1" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneSource"
+            android:value="installed_app" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneTimestamp"
+            android:value="\ 1771694160665" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildSerial"
+            android:value="d8da1f7046f7afe8" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildManufacturer"
+            android:value="OnePlus" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildModel"
+            android:value="CPH2583" />
+        <meta-data
+            android:name="com.applisto.appcloner.clonePremiumVersion"
+            android:value="true" />
+        <meta-data
+            android:name="com.applisto.appcloner.cloneAccountHash"
+            android:value="37D6FEA40DAE76BFD3113CC640634854" />
+        <meta-data
+            android:name="com.applisto.appcloner.runtimeModdingOptions"
+            android:value="true" />
+        <meta-data
+            android:name="com.applisto.appcloner.bundleOriginalApp"
+            android:value="false" />
+        <meta-data
+            android:name="com.applisto.appcloner.newIdentity"
+            android:value="false" />
+        <meta-data
+            android:name="com.applisto.appcloner.spoofLocation"
+            android:value="false" />
+        <meta-data
+            android:name="com.applisto.appcloner.versionCode"
+            android:value="57" />
+        <meta-data
+            android:name="com.applisto.appcloner.versionName"
+            android:value="2.1.7" />
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerPackageName"
+            android:value="com.applisto.appcloner" />
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerVersionName"
+            android:value="3.4.0" />
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerVersionCode"
+            android:value="26021313" />
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerClassesVersionCode"
+            android:value="20250730" />
+        <meta-data
+            android:name="com.applisto.appcloner.originalSignatures"
+            android:value="AQAAABwAAABhAG4AZAByAG8AaQBkAC4AYwBvAG4AdABlAG4AdAAuAHAAbQAuAFMAaQBnAG4AYQB0AHUAcgBlAAAAAACNBQAAMIIFiTCCA3GgAwIBAgIVAJX+trsGWoLPHtJmxCEBsaKmA5GJMA0GCSqGSIb3DQEBCwUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAgFw0yNDA4MDMxNTQwMDFaGA8yMDU0MDgwMzE1NDAwMVowdDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC0dvb2dsZSBJbmMuMRAwDgYDVQQLEwdBbmRyb2lkMRAwDgYDVQQDEwdBbmRyb2lkMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAt8QobnG90HKtQJgH+tOINUr6xtOuTu0MDHDG4sJqwAqP0ill/xuHCP8YukneRKG2oGUlo+gVXvlBdJeqNhyEig7JEZJb1iXxD35zkaSyBUCiqob5YhifbHoZvESd4Ay2LaA24fTsNxUJ+62c53npgnTxruhC7ae714UHt+5mBhCeIC5opXh2OKLdvRkXuRM2lyJQqL4/LbIu+Ejzz9grfaJ1I85bIb/3IRpjJf4rfby7XU70QR3AsG7Bp9k1+UQ4Qy+OjRx+XA7gGEO0rQpdXxz3A8DaTUvNLl7bkEJT6GrfscsnePHSVNKK40f7ie3dZaZWo3l81mVwKz/K8KKAwDATh+b8I7bsq7KYhz9L1Ruc7jplsTzlddEbSkcAz0hwLfPegSozJfR/fAzbzdatAdMKltPFT/G5qQ8OmzSYrklu05S46oyWXRIbyZCihEq/oFCTj5+eF/I2rZ0Mga5rytCtmAIdELrQ8OnE1uikJm13uqC56zxu7U+bgA8RRbQG3hhTJm6OTuHF5pGpRLwgoPnqpcs9JNcb9H1a0FHwY0cR7+F1M59uP+05p/zm34cTyGqPRF4xbQ+1uHnXmp1p9cp8rDzkVfw0KWIs4VZDVli4Ro/hpOowYbyEV6+/U1qaLpLjBRby2t+/w+NZcsZpEw4bZDHxJxVqQKUB90ZZGoMCAwEAAaMQMA4wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAVuuabrwfZzt/DOMxlU8ji66RwX0RRRbk7tB57OuM2/VgB4oKDH6/2guPVY8Y68ZttpUsb/paEDkYMWxFEh16YAYfBYhWsgAPSYit/ZLWa8DNhclU9UmZHH03AgHBtW152ray4j65hbMvnl55cTy+thS12LlDoyk9iQsNznN4gYYoIwKiZ33nkWqbYbGNm+4MOT5gGErfSI0kAydaAsfBbBDWBJuHQxlqa8W+ymEVDB3jlEhCfk8RhoiGDuyPN/M66eYmda3JWSXpXO0MDEEUqwXN196WASmdtdlvRBR/sS+1pYVaPYjtZkE3oMgXDHmsGuyNcfKupiB+kDr7VMOjF2iR09f+l4OSodZfAzYFlMX2/SU7AkxvN4P/NvlwxoGykI6bFC4HXflsN50SkkkNiGhZk/SsXe8QReSsmtBFwnm9eBCWTh9zWfMeU6lbHbWWP/PZ8kjHMQwtv2XpZQ2fMO2lS1w0AYtfbhK6hDq9T8F7bvBqAX/+5cV6P38bDqfWS7cW05JmaNFPzu15lf10UHYG4PGMd6LfBPAJSxogklKeKire7TUQSWTb5psx4h9uhK9VsQLyJno654lOod8btrXxD7O/XSHJcGB9VOy4mpcUAex26ljo3EPhoCagXccHglOTmzbQQVIXJxPEYyFk0lF45YoknvziqYGlcCQuUYgAAAA=" />
+        <meta-data
+            android:name="com.applisto.appcloner.originalSigningInfo"
+            android:value="AAAAAAEAAAABAAAAjQUAADCCBYkwggNxoAMCAQICFQCV/ra7BlqCzx7SZsQhAbGipgORiTANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWQwIBcNMjQwODAzMTU0MDAxWhgPMjA1NDA4MDMxNTQwMDFaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALfEKG5xvdByrUCYB/rTiDVK+sbTrk7tDAxwxuLCasAKj9IpZf8bhwj/GLpJ3kShtqBlJaPoFV75QXSXqjYchIoOyRGSW9Yl8Q9+c5GksgVAoqqG+WIYn2x6GbxEneAMti2gNuH07DcVCfutnOd56YJ08a7oQu2nu9eFB7fuZgYQniAuaKV4djii3b0ZF7kTNpciUKi+Py2yLvhI88/YK32idSPOWyG/9yEaYyX+K328u11O9EEdwLBuwafZNflEOEMvjo0cflwO4BhDtK0KXV8c9wPA2k1LzS5e25BCU+hq37HLJ3jx0lTSiuNH+4nt3WWmVqN5fNZlcCs/yvCigMAwE4fm/CO27KuymIc/S9UbnO46ZbE85XXRG0pHAM9IcC3z3oEqMyX0f3wM283WrQHTCpbTxU/xuakPDps0mK5JbtOUuOqMll0SG8mQooRKv6BQk4+fnhfyNq2dDIGua8rQrZgCHRC60PDpxNbopCZtd7qgues8bu1Pm4APEUW0Bt4YUyZujk7hxeaRqUS8IKD56qXLPSTXG/R9WtBR8GNHEe/hdTOfbj/tOaf85t+HE8hqj0ReMW0Ptbh515qdafXKfKw85FX8NCliLOFWQ1ZYuEaP4aTqMGG8hFevv1Nami6S4wUW8trfv8PjWXLGaRMOG2Qx8ScVakClAfdGWRqDAgMBAAGjEDAOMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIBAFbrmm68H2c7fwzjMZVPI4uukcF9EUUW5O7QeezrjNv1YAeKCgx+v9oLj1WPGOvGbbaVLG/6WhA5GDFsRRIdemAGHwWIVrIAD0mIrf2S1mvAzYXJVPVJmRx9NwIBwbVtedq2suI+uYWzL55eeXE8vrYUtdi5Q6MpPYkLDc5zeIGGKCMComd955Fqm2GxjZvuDDk+YBhK30iNJAMnWgLHwWwQ1gSbh0MZamvFvsphFQwd45RIQn5PEYaIhg7sjzfzOunmJnWtyVkl6VztDAxBFKsFzdfelgEpnbXZb0QUf7EvtaWFWj2I7WZBN6DIFwx5rBrsjXHyrqYgfpA6+1TDoxdokdPX/peDkqHWXwM2BZTF9v0lOwJMbzeD/zb5cMaBspCOmxQuB135bDedEpJJDYhoWZP0rF3vEEXkrJrQRcJ5vXgQlk4fc1nzHlOpWx21lj/z2fJIxzEMLb9l6WUNnzDtpUtcNAGLX24SuoQ6vU/Be27wagF//uXFej9/Gw6n1ku3FtOSZmjRT87teZX9dFB2BuDxjHei3wTwCUsaIJJSnioq3u01EElk2+abMeIfboSvVbEC8iZ6OueJTqHfG7a18Q+zv10hyXBgfVTsuJqXFAHsdupY6NxD4aAmoF3HB4JTk5s20EFSFycTxGMhZNJReOWKJJ784qmBpXAkLlGIAAAAAwAAAAEAAAAVAAAA0AMAAC0AAABjAG8AbQAuAGEAbgBkAHIAbwBpAGQALgBvAHIAZwAuAGMAbwBuAHMAYwByAHkAcAB0AC4ATwBwAGUAbgBTAFMATABSAFMAQQBQAHUAYgBsAGkAYwBLAGUAeQAAAGoDAACs7QAFc3IALWNvbS5hbmRyb2lkLm9yZy5jb25zY3J5cHQuT3BlblNTTFJTQVB1YmxpY0tleQG1bYpbJgCkAwACTAAHbW9kdWx1c3QAFkxqYXZhL21hdGgvQmlnSW50ZWdlcjtMAA5wdWJsaWNFeHBvbmVudHEAfgABeHBzcgAUamF2YS5tYXRoLkJpZ0ludGVnZXKM/J8fqTv7HQMABkkACGJpdENvdW50SQAJYml0TGVuZ3RoSQATZmlyc3ROb256ZXJvQnl0ZU51bUkADGxvd2VzdFNldEJpdEkABnNpZ251bVsACW1hZ25pdHVkZXQAAltCeHIAEGphdmEubGFuZy5OdW1iZXKGrJUdC5TgiwIAAHhwAAAAAAAAAAAAAAAAAAAAAAAAAAF1cgACW0Ks8xf4BghU4AIAAHhwAAACALfEKG5xvdByrUCYB/rTiDVK+sbTrk7tDAxwxuLCasAKj9IpZf8bhwj/GLpJ3kShtqBlJaPoFV75QXSXqjYchIoOyRGSW9Yl8Q9+c5GksgVAoqqG+WIYn2x6GbxEneAMti2gNuH07DcVCfutnOd56YJ08a7oQu2nu9eFB7fuZgYQniAuaKV4djii3b0ZF7kTNpciUKi+Py2yLvhI88/YK32idSPOWyG/9yEaYyX+K328u11O9EEdwLBuwafZNflEOEMvjo0cflwO4BhDtK0KXV8c9wPA2k1LzS5e25BCU+hq37HLJ3jx0lTSiuNH+4nt3WWmVqN5fNZlcCs/yvCigMAwE4fm/CO27KuymIc/S9UbnO46ZbE85XXRG0pHAM9IcC3z3oEqMyX0f3wM283WrQHTCpbTxU/xuakPDps0mK5JbtOUuOqMll0SG8mQooRKv6BQk4+fnhfyNq2dDIGua8rQrZgCHRC60PDpxNbopCZtd7qgues8bu1Pm4APEUW0Bt4YUyZujk7hxeaRqUS8IKD56qXLPSTXG/R9WtBR8GNHEe/hdTOfbj/tOaf85t+HE8hqj0ReMW0Ptbh515qdafXKfKw85FX8NCliLOFWQ1ZYuEaP4aTqMGG8hFevv1Nami6S4wUW8trfv8PjWXLGaRMOG2Qx8ScVakClAfdGWRqDeHNxAH4AAwAAAAAAAAAAAAAAAAAAAAAAAAABdXEAfgAHAAAAAwEAAXh4AAD/////" />
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="1" />
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerWebViewDownloadUrl"
+            android:value="https://appcloner.applisto.com/download/AppClonerWebView-138.0.7204.301-720430101-arm.apk" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_deactivated"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_crashlytics_ndk_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="_" />
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="google_analytics_adid_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <provider
+            android:name="com.applisto.appcloner.classes.DefaultProvider"
+            android:exported="true"
+            android:authorities="com.truelauncher.ioslaunches.com.applisto.appcloner.classes.DefaultProvider"
+            android:initOrder="2147483647" />
+        <service
+            android:name="com.applisto.appcloner.service.RemoteService"
+            android:exported="true" />
+        <receiver
+            android:name="com.applisto.appcloner.classes.DefaultProvider$DefaultReceiver"
+            android:exported="true" />
+        <receiver
+            android:name="com.applisto.appcloner.classes.MediaControllerReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.applisto.appcloner.api.action.MEDIA_CONTROLLER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.applisto.appcloner.classes.ChangeLocaleReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.applisto.appcloner.api.action.CHANGE_LOCALE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.applisto.appcloner.classes.RulesApiReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.applisto.appcloner.api.action.DISABLE_RULE" />
+                <action
+                    android:name="com.applisto.appcloner.api.action.ENABLE_RULE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.applisto.appcloner.classes.DeviceStorageLowReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.applisto.appcloner.classes.SpoofLocationReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.applisto.appcloner.api.action.SPOOF_LOCATION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.applisto.appcloner.classes.SpoofGpsTrackReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.applisto.appcloner.api.action.SPOOF_GPS_TRACK_PAUSE" />
+                <action
+                    android:name="com.applisto.appcloner.api.action.SPOOF_GPS_TRACK_RESUME" />
+                <action
+                    android:name="com.applisto.appcloner.api.action.SPOOF_GPS_TRACK_RESTART" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.applisto.appcloner.classes.FakeEnvironmentSensorsReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.applisto.appcloner.api.action.FAKE_ENVIRONMENT_SENSORS" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.applisto.appcloner.classes.SocksProxyReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.applisto.appcloner.api.action.SOCKS_PROXY" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.applisto.appcloner.classes.LogcatViewer$LogcatActivity" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.applisto.appcloner.classes.ScreenSaver$ScreenSaverActivity" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.applisto.appcloner.classes.DefaultProvider$DefaultActivity" />
+        <service
+            android:name="com.applisto.appcloner.classes.AppInfoService" />
+        <service
+            android:name="com.applisto.appcloner.classes.AppExitListenerService" />
+    </application>
+    <!-- Can check if you have a license for this app from Google Play. -->
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+    <uses-permission
+        android:name="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS" />
+    <!-- Allows the app to configure the local Bluetooth phone, and to discover and pair with remote devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- This app can appear on top of other apps or other parts of the screen. This may interfere with normal app usage and change the way that other apps appear. -->
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Allows the app to write the contents of your shared storage. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <!-- Allows the app to connect to and disconnect from Wi-Fi access points and to make changes to device configuration for Wi-Fi networks. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- Allows an app to ask for permission to ignore battery optimizations for that app. -->
+    <uses-permission
+        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Allows the app to read the contents of your shared storage. -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Allows the app to view the configuration of the Bluetooth on the phone, and to make and accept connections with paired devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+    <!-- Allows the app to modify the system's settings data. Malicious apps may corrupt your system's configuration. -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.READ_SETTINGS" />
+    <!-- Allows this app to read Google service configuration data. -->
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+</manifest>

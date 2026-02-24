@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/main_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="40.0dip"
+        app:layout_constraintBottom_toTopOf="@id/divider_top"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/divider_top"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginBottom="16.0dip"
+        app:layout_constraintBottom_toTopOf="@id/label" />
+    <FrameLayout
+        android:id="@id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label">
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="23.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:src="@drawable/back_icon"
+            android:layout_marginStart="16.0dip"
+            android:layout_marginEnd="16.0dip"
+            android:layout_marginVertical="8.0dip" />
+    </FrameLayout>
+    <TextView
+        android:textSize="17.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_text"
+        android:id="@id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:text="@string/apps_preview"
+        app:layout_constraintBottom_toTopOf="@id/divider_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <View
+        android:id="@id/divider_bottom"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginBottom="16.0dip"
+        app:layout_constraintBottom_toTopOf="@id/save_only_button" />
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/save_only_button"
+        android:background="@drawable/rounded_button_bg"
+        android:paddingTop="14.0dip"
+        android:paddingBottom="14.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="4.0dip"
+        android:backgroundTint="@color/icon_pack_option_button_color"
+        android:backgroundTintMode="add"
+        android:paddingVertical="14.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/save_apply"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/save_only"
+            android:layout_marginEnd="4.0dip" />
+        <TextView
+            android:textSize="17.0dip"
+            android:textColor="@color/icon_pack_button_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_only" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/save_apply"
+        android:background="@drawable/rounded_button_bg"
+        android:paddingTop="14.0dip"
+        android:paddingBottom="14.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:backgroundTint="@color/icon_pack_button_color"
+        android:backgroundTintMode="add"
+        android:paddingVertical="14.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/save_only_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/save_only_button">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tick"
+            android:layout_marginEnd="4.0dip" />
+        <TextView
+            android:textSize="17.0dip"
+            android:textColor="@color/icon_pack_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_and_apply" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

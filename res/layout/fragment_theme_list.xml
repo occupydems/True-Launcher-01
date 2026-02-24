@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/theme_list"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingBottom="@dimen/icon_pack_padding_bottom"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:paddingHorizontal="8.0dip"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:spanCount="2" />
+    <FrameLayout
+        android:id="@id/diy_banner"
+        android:background="@color/icon_pack_bg_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            android:id="@id/banner_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/theme_profile_extra_margin"
+            android:layout_marginRight="@dimen/theme_profile_extra_margin"
+            android:layout_marginHorizontal="@dimen/theme_profile_extra_margin"
+            layout="@layout/layout_banner_cross_theme" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@id/list_category"
+        android:background="@color/icon_pack_bg_color"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="12.0dip"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12.0dip"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/diy_banner" />
+    <FrameLayout
+        android:id="@id/no_item_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            android:layout_gravity="center"
+            android:id="@id/progress_item"
+            android:layout_width="@dimen/loading_thumb_size"
+            android:layout_height="@dimen/loading_thumb_size"
+            layout="@layout/theme_loading_layout" />
+        <include
+            android:id="@id/no_item_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_no_item_wallpaper" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:radius="100.0dip" />
+    <solid
+        android:color="@color/color_container_alpha_3rd" />
+    <stroke
+        android:width="1.0dip"
+        android:color="@color/new_color_divider" />
+</shape>

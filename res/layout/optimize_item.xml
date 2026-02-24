@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/optimize_item_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/img_icon"
+        android:layout_width="34.0dip"
+        android:layout_height="34.0dip"
+        android:layout_margin="20.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/img_tick"
+        android:layout_width="23.0dip"
+        android:layout_height="23.0dip"
+        android:layout_margin="20.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginHorizontal="12.0dip"
+        android:layout_marginVertical="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_tick"
+        app:layout_constraintStart_toEndOf="@id/img_icon"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="16.75dip"
+            android:textColor="@color/pro_main_text"
+            android:id="@id/txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:customFont="2" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="14.199982dip"
+            android:textColor="@color/pro_main_text"
+            android:id="@id/txt_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/fragment_container_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="8.0dip"
+        android:textColor="@color/white"
+        android:id="@id/txt_free"
+        android:background="@drawable/ic_free_mark_bg"
+        android:paddingLeft="4.5dip"
+        android:paddingTop="2.0dip"
+        android:paddingRight="4.5dip"
+        android:paddingBottom="2.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/free_none_translate"
+        android:textAllCaps="true"
+        android:layout_marginStart="16.0dip"
+        android:paddingHorizontal="4.5dip"
+        android:paddingVertical="2.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_container_view" />
+    <ImageView
+        android:id="@id/txt_crown"
+        android:background="@drawable/ic_pro_mark_bg"
+        android:paddingLeft="7.3399963dip"
+        android:paddingTop="2.6299744dip"
+        android:paddingRight="7.3399963dip"
+        android:paddingBottom="2.6299744dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_crown"
+        android:paddingHorizontal="7.3399963dip"
+        android:paddingVertical="2.6299744dip"
+        app:layout_constraintBottom_toBottomOf="@id/txt_free"
+        app:layout_constraintEnd_toEndOf="@id/txt_free"
+        app:layout_constraintStart_toStartOf="@id/txt_free"
+        app:layout_constraintTop_toTopOf="@id/txt_free" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="18.5dip"
+        android:textColor="@color/pro_main_text"
+        android:ellipsize="marquee"
+        android:id="@id/txt_name_theme"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="6.0dip"
+        app:customFont="2"
+        app:layout_constraintBottom_toBottomOf="@id/txt_free"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_free"
+        app:layout_constraintTop_toTopOf="@id/txt_free" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.appsearch.AppSearchContainerView
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/frame_app_search"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.android.launcher3.appsearch.OverScrollLayout
+            android:id="@id/view_suggest"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.android.launcher3.appsearch.v2.ui.SuggestContentListView
+                android:id="@id/suggest_content_list_view"
+                android:paddingBottom="70.0dip"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </com.android.launcher3.appsearch.OverScrollLayout>
+        <com.android.launcher3.appsearch.OverScrollLayout
+            android:id="@id/search_content"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.android.launcher3.appsearch.v2.ui.AppSearchListView
+                android:id="@id/top_hit_list"
+                android:paddingBottom="70.0dip"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </com.android.launcher3.appsearch.OverScrollLayout>
+        <com.android.launcher3.views.GradientView
+            android:layout_gravity="top"
+            android:id="@id/top_gradient"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip" />
+        <com.android.launcher3.views.GradientView
+            android:layout_gravity="bottom"
+            android:id="@id/bottom_gradient"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip" />
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:id="@id/search_wrapper"
+            android:background="@drawable/bg_search_settings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip">
+            <com.android.launcher3.BlurExtendedEditText
+                android:textSize="18.0dip"
+                android:textColor="@color/white"
+                android:textColorHint="#99ffffff"
+                android:gravity="center|left"
+                android:id="@id/search_bar"
+                android:paddingLeft="42.0dip"
+                android:paddingRight="42.0dip"
+                android:focusableInTouchMode="true"
+                android:saveEnabled="false"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:hint="@string/search"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:imeOptions="actionSearch|flagNoExtractUi"
+                android:textCursorDrawable="@null"
+                android:paddingHorizontal="42.0dip"
+                app:background_color="@color/app_search_bar_bg_color"
+                app:blur_color_filter="@color/hotseat_blur_color_filter"
+                app:clearIcon="@drawable/ic_app_search_clear"
+                app:has_stroke="false"
+                app:round_radius="24.0dip" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="start|center"
+                android:id="@id/highLightView"
+                android:background="@drawable/bg_highlight"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="28.0dip"
+                android:foreground="@drawable/ripple_12"
+                android:maxLines="1"
+                android:lines="1"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="38.0dip"
+                android:layout_alignParentStart="true"
+                android:paddingHorizontal="8.0dip" />
+            <ImageView
+                android:id="@id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lookup_app_search"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14.0dip" />
+            <ImageView
+                android:id="@id/img_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_options"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14.0dip"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</com.android.launcher3.appsearch.AppSearchContainerView>

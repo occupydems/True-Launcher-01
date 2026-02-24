@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="13.0dip"
+        android:textColor="@color/icon_pack_sub_text"
+        android:id="@id/color_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="16.0dip"
+        android:textAllCaps="true"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@id/color_picker_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        app:layout_constraintTop_toBottomOf="@id/color_label"
+        layout="@layout/simple_color_picker_layout" />
+    <View
+        android:id="@id/property_divider"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_picker_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

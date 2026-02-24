@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/new_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/action_bar_custom"
+        layout="@layout/action_bar_settings" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/new_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <FrameLayout
+            android:id="@id/preview_container"
+            android:background="@drawable/bg_icon_preview"
+            android:layout_width="150.0dip"
+            android:layout_height="0.0dip"
+            android:layout_margin="24.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/scroll_container"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/preview_layout"
+                android:layout_width="300.0dip"
+                android:layout_height="fill_parent">
+                <ImageView
+                    android:layout_width="150.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/wallpaper_preview_icons" />
+                <ImageView
+                    android:layout_width="150.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/wallpaper_preview_icons" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.truelib.settings.custom.SafeScrollView
+            android:id="@id/scroll_container"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:scrollbars="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/new_background_item_group_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_marginHorizontal="@dimen/medium_margin">
+                <com.truelib.settings.custom.TextCustomFont
+                    android:textSize="@dimen/medium_text_size"
+                    android:textColor="@color/color_content_1st"
+                    android:ellipsize="end"
+                    android:id="@id/scroll_type_1"
+                    android:paddingTop="@dimen/item_settings_margin"
+                    android:paddingBottom="@dimen/item_settings_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_item_settings"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:text="@string/default_name"
+                    android:lines="1"
+                    android:drawablePadding="8.0dip"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:paddingVertical="@dimen/item_settings_margin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/auto_arrange" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip" />
+                <FrameLayout
+                    android:id="@id/banner_ad_frame"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingTop="@dimen/small_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingBottom="@dimen/small_margin"
+                    android:clipToPadding="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/medium_margin"
+                    android:paddingVertical="@dimen/small_margin"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip" />
+                <com.truelib.settings.custom.TextCustomFont
+                    android:textSize="@dimen/medium_text_size"
+                    android:textColor="@color/color_content_1st"
+                    android:ellipsize="end"
+                    android:id="@id/scroll_type_2"
+                    android:paddingTop="@dimen/item_settings_margin"
+                    android:paddingBottom="@dimen/item_settings_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_item_settings"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:text="@string/rotation"
+                    android:lines="1"
+                    android:drawablePadding="8.0dip"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:paddingVertical="@dimen/item_settings_margin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/auto_arrange" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip" />
+                <com.truelib.settings.custom.TextCustomFont
+                    android:textSize="@dimen/medium_text_size"
+                    android:textColor="@color/color_content_1st"
+                    android:ellipsize="end"
+                    android:id="@id/scroll_type_3"
+                    android:paddingTop="@dimen/item_settings_margin"
+                    android:paddingBottom="@dimen/item_settings_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_item_settings"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:text="@string/flip"
+                    android:lines="1"
+                    android:drawablePadding="8.0dip"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:paddingVertical="@dimen/item_settings_margin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/auto_arrange" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip" />
+                <com.truelib.settings.custom.TextCustomFont
+                    android:textSize="@dimen/medium_text_size"
+                    android:textColor="@color/color_content_1st"
+                    android:ellipsize="end"
+                    android:id="@id/scroll_type_4"
+                    android:paddingTop="@dimen/item_settings_margin"
+                    android:paddingBottom="@dimen/item_settings_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_item_settings"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:text="@string/zoom_in"
+                    android:lines="1"
+                    android:drawablePadding="8.0dip"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:paddingVertical="@dimen/item_settings_margin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/auto_arrange" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip" />
+                <com.truelib.settings.custom.TextCustomFont
+                    android:textSize="@dimen/medium_text_size"
+                    android:textColor="@color/color_content_1st"
+                    android:ellipsize="end"
+                    android:id="@id/scroll_type_5"
+                    android:paddingTop="@dimen/item_settings_margin"
+                    android:paddingBottom="@dimen/item_settings_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_item_settings"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:text="@string/alpha"
+                    android:lines="1"
+                    android:drawablePadding="8.0dip"
+                    android:layout_marginHorizontal="@dimen/medium_margin"
+                    android:paddingVertical="@dimen/item_settings_margin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/auto_arrange" />
+            </LinearLayout>
+        </com.truelib.settings.custom.SafeScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

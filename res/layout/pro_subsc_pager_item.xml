@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/subsc_pack_info_solid_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="4.0dip"
+    android:layout_marginRight="4.0dip"
+    android:layout_marginHorizontal="4.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/img_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/img_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_banner"
+        app:layout_constraintTop_toTopOf="@id/img_banner">
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="16.75sp"
+            android:id="@id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:customFont="2" />
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="13.5sp"
+            android:id="@id/txt_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

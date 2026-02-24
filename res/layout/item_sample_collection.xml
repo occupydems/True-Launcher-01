@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/cv_item_wallpaper"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="4.0dip"
+    android:layout_marginRight="4.0dip"
+    android:layout_marginHorizontal="4.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="12.0dip"
+        app:cardElevation="0.0dip"
+        app:layout_constraintDimensionRatio="h,150:279"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/theme_transparent_secondary"
+        app:strokeWidth="1.0dip">
+        <ImageView
+            android:id="@id/ivImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout
+            android:layout_gravity="bottom"
+            android:id="@id/collection_gradient"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.truelib.common.TextViewCustomFont
+                android:textSize="12.5dip"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:id="@id/collection_name"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"
+                android:paddingBottom="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingHorizontal="2.0dip"
+                app:customFont="2" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@id/ic_new"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4.0dip"
+        android:src="@drawable/ic_new_theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

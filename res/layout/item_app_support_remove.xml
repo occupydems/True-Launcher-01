@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_10"
+    android:layout_marginRight="@dimen/size_10"
+    android:layout_marginHorizontal="@dimen/size_10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/imgLogoApp"
+        android:layout_width="26.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="@dimen/size_10"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16.0sp"
+        android:textColor="#ff5e5e5e"
+        android:gravity="center"
+        android:id="@id/nameApp"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/size_10"
+        app:fontFamily="@font/sfpro_regular"
+        app:layout_constraintBottom_toBottomOf="@id/imgLogoApp"
+        app:layout_constraintStart_toEndOf="@id/imgLogoApp"
+        app:layout_constraintTop_toTopOf="@id/imgLogoApp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

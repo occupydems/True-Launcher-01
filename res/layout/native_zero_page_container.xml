@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:id="@id/card_view_ads"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffffff"
+    app:cardCornerRadius="@dimen/native_ad_default_radius"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:orientation="vertical"
+        android:id="@id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@id/fl_adplaceholder"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <include
+            layout="@layout/native_zero_page_loading" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

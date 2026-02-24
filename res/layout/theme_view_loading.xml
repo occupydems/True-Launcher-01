@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="32.0dip"
+    android:clickable="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:layout_gravity="center"
+        android:id="@id/progress_item"
+        android:layout_width="@dimen/loading_thumb_size"
+        android:layout_height="@dimen/loading_thumb_size"
+        android:layout_marginBottom="6.0dip"
+        layout="@layout/theme_loading_layout" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/theme_color_brown"
+        android:layout_gravity="center"
+        android:id="@id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:text="@string/loading_text"
+        app:customFont="3" />
+</LinearLayout>

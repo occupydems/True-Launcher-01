@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/pro_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@id/animation"
+            android:layout_width="64.0dip"
+            android:layout_height="64.0dip"
+            android:src="@drawable/ic_payment_success" />
+        <TextView
+            android:textSize="22.0dip"
+            android:textStyle="bold"
+            android:textColor="@color/pro_main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/payment_success" />
+        <TextView
+            android:textSize="17.0dip"
+            android:textColor="@color/pro_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/thank_you_" />
+    </LinearLayout>
+    <TextView
+        android:textSize="17.0dip"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@id/done_button"
+        android:background="@drawable/bg_done"
+        android:padding="14.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30.0dip"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="@dimen/content_price_width" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+.class public abstract Landroidx/room/i;
+.super Landroidx/room/Y;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Landroidx/room/I;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "database"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, LLa/n;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0, p1}, Landroidx/room/Y;-><init>(Landroidx/room/I;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+
+# virtual methods
+.method protected abstract j(LL0/g;Ljava/lang/Object;)V
+.end method
+
+.method public final k(Ljava/lang/Object;)I
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/room/Y;->b()LL0/g;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    :try_start_0
+    invoke-virtual {p0, v0, p1}, Landroidx/room/i;->j(LL0/g;Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-interface {v0}, LL0/g;->K()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {p0, v0}, Landroidx/room/Y;->h(LL0/g;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return p1
+
+    .line 16
+    :catchall_0
+    move-exception p1
+
+    .line 17
+    invoke-virtual {p0, v0}, Landroidx/room/Y;->h(LL0/g;)V
+
+    .line 18
+    .line 19
+    .line 20
+    throw p1
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method

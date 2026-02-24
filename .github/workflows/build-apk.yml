@@ -1,0 +1,123 @@
+name: Build APK and Release
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache Android SDK
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.ANDROID_HOME }}/build-tools/34.0.0
+            ${{ env.ANDROID_HOME }}/platforms/android-34
+          key: android-sdk-34-${{ runner.os }}
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android build-tools and platform
+        run: |
+          sdkmanager --install "build-tools;34.0.0" "platforms;android-34"
+          echo "ANDROID_BUILD_TOOLS=${ANDROID_HOME}/build-tools/34.0.0" >> $GITHUB_ENV
+
+      - name: Cache apktool
+        uses: actions/cache@v4
+        with:
+          path: /usr/local/bin/apktool*
+          key: apktool-2.10.0-${{ runner.os }}
+
+      - name: Install apktool
+        run: |
+          if [ ! -f /usr/local/bin/apktool.jar ]; then
+            APKTOOL_VERSION="2.10.0"
+            sudo wget -q "https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool" -O /usr/local/bin/apktool
+            sudo chmod +x /usr/local/bin/apktool
+            sudo wget -q "https://github.com/iBotPeaches/Apktool/releases/download/v${APKTOOL_VERSION}/apktool_${APKTOOL_VERSION}.jar" -O /usr/local/bin/apktool.jar
+            sudo chmod +x /usr/local/bin/apktool.jar
+          fi
+          apktool --version
+
+      - name: Cache apktool framework
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/apktool/framework
+          key: apktool-framework-${{ runner.os }}
+
+      - name: Pre-process source for compatibility
+        run: |
+          find . -name ".dex037" -delete 2>/dev/null || true
+          if [ -f "res/values/styles.xml" ]; then
+            sed -i '/windowOptOutEdgeToEdgeEnforcement/d' res/values/styles.xml
+          fi
+          echo "Pre-processing complete"
+
+      - name: Build APK with apktool
+        run: |
+          apktool b . -o /tmp/True_Launcher_3-unsigned.apk --use-aapt2 --force-all
+          ls -la /tmp/True_Launcher_3-unsigned.apk
+
+      - name: Align APK
+        run: |
+          ${ANDROID_BUILD_TOOLS}/zipalign -v 4 /tmp/True_Launcher_3-unsigned.apk /tmp/True_Launcher_3-aligned.apk
+
+      - name: Decode keystore and sign APK
+        run: |
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > /tmp/release.keystore
+
+          ${ANDROID_BUILD_TOOLS}/apksigner sign \
+            --ks /tmp/release.keystore \
+            --ks-key-alias ${{ secrets.KEY_ALIAS }} \
+            --ks-pass pass:${{ secrets.KEYSTORE_PASSWORD }} \
+            --key-pass pass:${{ secrets.KEY_PASSWORD }} \
+            --out /tmp/True_Launcher_3.apk \
+            /tmp/True_Launcher_3-aligned.apk
+
+          ${ANDROID_BUILD_TOOLS}/apksigner verify --print-certs /tmp/True_Launcher_3.apk
+          echo "APK signed successfully with release key"
+
+      - name: Get version info
+        id: version
+        run: |
+          VERSION="v3.0.0"
+          DATE=$(date +'%Y%m%d-%H%M%S')
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "date=${DATE}" >> $GITHUB_OUTPUT
+          echo "tag=${VERSION}-${DATE}" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: "True Launcher 3 ${{ steps.version.outputs.version }} (Build ${{ steps.version.outputs.date }})"
+          body: |
+            Automated APK build from source.
+            
+            **Version:** ${{ steps.version.outputs.version }}
+            **Build Date:** ${{ steps.version.outputs.date }}
+            
+            ## Installation
+            1. Download the APK file below
+            2. Enable "Install from unknown sources" on your Android device
+            3. Install the APK
+            
+            This APK is signed with a consistent release key, so you can install updates directly over previous versions.
+          files: /tmp/True_Launcher_3.apk
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}

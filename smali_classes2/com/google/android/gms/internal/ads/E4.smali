@@ -1,0 +1,26 @@
+.class abstract Lcom/google/android/gms/internal/ads/E4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method static final synthetic a(JJLjava/lang/String;)J
+    .locals 0
+
+    .line 1
+    return-wide p0
+.end method
+
+.method static final synthetic b(JJLjava/lang/String;)J
+    .locals 0
+
+    .line 1
+    return-wide p2
+.end method
+
+.method static final synthetic c(JJLjava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    return-object p4
+.end method

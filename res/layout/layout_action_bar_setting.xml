@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="16.0dip"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/action_bar_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/general"
+        app:customFont="2"
+        app:layout_constraintBottom_toBottomOf="@id/action_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/action_back" />
+    <com.android.launcher3.settings.custom.TextViewCustomFont
+        android:textSize="16.0dip"
+        android:textColor="@color/blue_color"
+        android:gravity="start|center"
+        android:id="@id/action_back"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/back"
+        android:drawablePadding="@dimen/small_margin"
+        android:drawableStart="@drawable/ic_back_press"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="@dimen/small_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

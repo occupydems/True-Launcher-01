@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="30.0dip"
+    android:width="30.0dip"
+    android:viewportWidth="30.0"
+    android:viewportHeight="30.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <path
+        android:fillColor="@drawable/$ic_weather_settings__0"
+        android:pathData="M7,0L23,0A7,7 0,0 1,30 7L30,23A7,7 0,0 1,23 30L7,30A7,7 0,0 1,0 23L0,7A7,7 0,0 1,7 0z" />
+    <path
+        android:fillColor="@drawable/$ic_weather_settings__1"
+        android:pathData="M19.867,12.703m-5.031,0a5.031,5.031 0,1 1,10.063 0a5.031,5.031 0,1 1,-10.063 0" />
+    <path
+        android:fillColor="@drawable/$ic_weather_settings__2"
+        android:pathData="M18.555,22.212C20.902,22.083 22.766,20.115 22.766,17.707C22.766,15.215 20.77,13.195 18.309,13.195C18.003,13.195 17.705,13.226 17.417,13.286C16.753,11.325 14.905,9.914 12.731,9.914C10.031,9.914 7.836,12.088 7.782,14.79C6.26,15.273 5.156,16.715 5.156,18.418C5.156,20.489 6.789,22.174 8.82,22.218V22.219H18.555V22.212Z" />
+</vector>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/background_secondary"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/action_bar_custom"
+        layout="@layout/action_bar_settings" />
+    <com.truelib.settings.custom.SafeScrollView
+        android:paddingBottom="@dimen/small_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        app:layout_constraintBottom_toTopOf="@id/banner_ad_frame"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.truelib.settings.custom.TextCustomFont
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/text_secondary"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:text="@string/options"
+                android:textAllCaps="true"
+                android:paddingStart="@dimen/medium_margin"
+                android:layout_marginHorizontal="@dimen/medium_margin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.cardview.widget.CardView
+                android:id="@id/settings_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_marginHorizontal="@dimen/medium_margin"
+                app:cardCornerRadius="@dimen/radius_item_settings"
+                app:cardElevation="0.0dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <com.truelib.settings.custom.TextCustomFont
+                        android:textSize="@dimen/medium_text_size"
+                        android:textColor="@color/text_primary"
+                        android:ellipsize="end"
+                        android:id="@id/use_glassmorphism_concept"
+                        android:paddingTop="@dimen/item_settings_margin"
+                        android:paddingBottom="@dimen/item_settings_margin"
+                        android:layout_width="0.0dip"
+                        android:layout_height="@dimen/height_item_settings"
+                        android:text="@string/use_glassmorphism_style"
+                        android:lines="1"
+                        android:layout_marginStart="@dimen/medium_margin"
+                        android:paddingVertical="@dimen/item_settings_margin"
+                        app:layout_constraintEnd_toStartOf="@id/switch_use_glassmorphism"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <com.truelib.settings.custom.SwitchView
+                        android:id="@id/switch_use_glassmorphism"
+                        android:duplicateParentState="true"
+                        android:layout_width="@dimen/width_switch_view"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/medium_margin"
+                        app:layout_constraintBottom_toBottomOf="@id/use_glassmorphism_concept"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/use_glassmorphism_concept" />
+                    <View
+                        android:background="@color/divider"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginStart="@dimen/medium_margin"
+                        app:layout_constraintTop_toBottomOf="@id/use_glassmorphism_concept" />
+                    <com.truelib.settings.custom.TextCustomFont
+                        android:textSize="@dimen/medium_text_size"
+                        android:textColor="@color/text_primary"
+                        android:ellipsize="end"
+                        android:id="@id/soft_light"
+                        android:paddingTop="@dimen/item_settings_margin"
+                        android:paddingBottom="@dimen/item_settings_margin"
+                        android:layout_width="0.0dip"
+                        android:layout_height="@dimen/height_item_settings"
+                        android:text="@string/icon_soft_light"
+                        android:lines="1"
+                        android:layout_marginStart="@dimen/medium_margin"
+                        android:paddingVertical="@dimen/item_settings_margin"
+                        app:layout_constraintEnd_toStartOf="@id/switch_use_soft_light"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/use_glassmorphism_concept" />
+                    <com.truelib.settings.custom.SwitchView
+                        android:id="@id/switch_use_soft_light"
+                        android:duplicateParentState="true"
+                        android:layout_width="@dimen/width_switch_view"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/medium_margin"
+                        app:layout_constraintBottom_toBottomOf="@id/soft_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/soft_light" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.truelib.settings.custom.SafeScrollView>
+</LinearLayout>

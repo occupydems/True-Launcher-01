@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.views.HelloFloatingView
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/background_wallpaper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/hello_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/action_tap_to_start"
+            app:layout_constraintEnd_toStartOf="@id/native_view_right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/hello_lottie" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="16.0dip"
+            android:textColor="@color/pro_main_text"
+            android:gravity="center"
+            android:id="@id/action_tap_to_start"
+            android:visibility="visible"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="24.0dip"
+            android:text="@string/tap_on_screen_to_start_explore_ios_launcher"
+            android:layout_marginHorizontal="16.0dip"
+            app:layout_constraintBottom_toTopOf="@id/native_view"
+            app:layout_constraintEnd_toStartOf="@id/native_view_right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_goneMarginBottom="100.0dip" />
+        <FrameLayout
+            android:id="@id/native_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <FrameLayout
+            android:id="@id/native_view_right"
+            android:padding="12.0dip"
+            android:visibility="gone"
+            android:clipToPadding="false"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.android.launcher3.views.HelloFloatingView>

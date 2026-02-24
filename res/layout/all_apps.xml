@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.allapps.AllAppsContainerView
+    android:id="@id/apps_view"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:saveEnabled="false"
+    android:clipChildren="true"
+    android:clipToPadding="false"
+    android:descendantFocusability="beforeDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.launcher3.allapps.AllAppsRecyclerView
+        android:id="@id/apps_list_view"
+        android:paddingTop="@dimen/_100dp"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.android.launcher3.allapps.AllAppsRecyclerView
+        android:id="@id/app_search_list_view"
+        android:paddingTop="@dimen/_100dp"
+        android:focusable="true"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.android.launcher3.views.GradientView
+        android:id="@id/blur_view"
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.android.launcher3.allapps.search.AppsSearchContainerLayout
+        android:textSize="18.0dip"
+        android:textColor="#ffffffff"
+        android:gravity="center|left"
+        android:layout_gravity="center"
+        android:id="@id/search_container_all_apps"
+        android:background="@drawable/bg_search_settings"
+        android:focusableInTouchMode="true"
+        android:saveEnabled="false"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/all_apps_search_bar_field_height"
+        android:layout_marginTop="48.0dip"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:imeOptions="actionSearch|flagNoExtractUi"
+        android:textCursorDrawable="@null"
+        android:paddingStart="38.0dip"
+        android:paddingEnd="12.0dip"
+        app:background_color="@color/default_dim_color"
+        app:has_stroke="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round_radius="24.0dip" />
+    <ImageView
+        android:id="@id/setting_app_lib"
+        android:padding="@dimen/dp8"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:src="@drawable/ic_options"
+        app:layout_constraintBottom_toBottomOf="@id/search_container_all_apps"
+        app:layout_constraintEnd_toEndOf="@id/search_container_all_apps"
+        app:layout_constraintTop_toTopOf="@id/search_container_all_apps"
+        app:tint="#ffffffff" />
+    <TextView
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:id="@id/btn_cancel"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:text="@string/cancel"
+        android:maxLines="1"
+        android:paddingHorizontal="12.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/search_container_all_apps"
+        app:layout_constraintStart_toEndOf="@id/search_container_all_apps"
+        app:layout_constraintTop_toTopOf="@id/search_container_all_apps" />
+    <LinearLayout
+        android:gravity="start|center"
+        android:orientation="horizontal"
+        android:id="@id/hint_wrapper"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:paddingStart="12.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/search_container_all_apps"
+        app:layout_constraintEnd_toEndOf="@id/search_container_all_apps"
+        app:layout_constraintStart_toStartOf="@id/search_container_all_apps"
+        app:layout_constraintTop_toTopOf="@id/search_container_all_apps">
+        <ImageView
+            android:id="@id/img_ic_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_allapps_search" />
+        <com.android.launcher3.settings.custom.TextViewCustomFont
+            android:textSize="18.0dip"
+            android:textColor="@color/all_app_search_hint_color"
+            android:gravity="center"
+            android:id="@id/txt_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_library"
+            android:includeFontPadding="false"
+            android:paddingStart="9.0dip" />
+    </LinearLayout>
+    <FrameLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/list_app_container"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_gravity="center_vertical"
+            android:id="@id/rcv_app_list"
+            android:paddingBottom="74.0dip"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4" />
+    </FrameLayout>
+    <com.android.launcher3.allapps.AllAppRecyclerViewScrollerView
+        android:id="@id/scroller"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_container_all_apps" />
+</com.android.launcher3.allapps.AllAppsContainerView>

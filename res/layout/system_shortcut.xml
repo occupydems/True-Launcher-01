@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.shortcuts.DeepShortcutView
+    android:theme="@style/PopupItem"
+    android:layout_width="@dimen/bg_popup_item_width"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8.0dip"
+    android:layout_marginTop="2.0dip"
+    android:layout_marginRight="8.0dip"
+    android:layout_marginBottom="2.0dip"
+    android:layout_marginHorizontal="8.0dip"
+    android:layout_marginVertical="2.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="14.0dip"
+        android:textColor="@color/popup_text_color"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:id="@id/bubble_text"
+        android:background="@drawable/ripple_transparent_background_16"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:focusable="false"
+        android:maxLines="1"
+        android:lines="1"
+        android:fontFamily="sans-serif"
+        android:textAlignment="viewStart"
+        android:paddingStart="36.0dip"
+        android:paddingEnd="8.0dip"
+        android:paddingVertical="8.0dip"
+        launcher:iconDisplay="shortcut_popup"
+        launcher:layoutHorizontal="true"
+        style="@style/BaseIcon" />
+    <ImageView
+        android:layout_gravity="start|center"
+        android:id="@id/icon"
+        android:layout_width="@dimen/system_shortcut_icon_size"
+        android:layout_height="@dimen/system_shortcut_icon_size"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="@dimen/system_shortcut_margin_start"
+        android:backgroundTint="?android:textColorTertiary" />
+</com.android.launcher3.shortcuts.DeepShortcutView>

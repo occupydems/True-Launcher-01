@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="200.0dip"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2.0dip"
+    android:layout_marginBottom="2.0dip"
+    android:layout_marginVertical="2.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/size_1x1"
+        android:background="@drawable/widget_resize_background"
+        android:padding="8.0dip"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:foreground="@drawable/ripple_transparent_background_16"
+        android:src="@drawable/ic_widget_1x1"
+        android:layout_marginHorizontal="8.0dip" />
+    <ImageView
+        android:id="@id/size_2x2"
+        android:background="@drawable/widget_resize_background"
+        android:padding="8.0dip"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:foreground="@drawable/ripple_transparent_background_16"
+        android:src="@drawable/ic_widget_2x2"
+        android:layout_marginEnd="8.0dip" />
+    <ImageView
+        android:id="@id/size_4x2"
+        android:background="@drawable/widget_resize_background"
+        android:padding="8.0dip"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:foreground="@drawable/ripple_transparent_background_16"
+        android:src="@drawable/ic_widget_4x2" />
+    <ImageView
+        android:id="@id/size_4x4"
+        android:background="@drawable/widget_resize_background"
+        android:padding="8.0dip"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:foreground="@drawable/ripple_transparent_background_16"
+        android:src="@drawable/ic_widget_4x4"
+        android:layout_marginHorizontal="8.0dip" />
+</LinearLayout>

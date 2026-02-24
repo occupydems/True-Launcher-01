@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.truelib.themes.view.seekbar.SeekbarLayout
+    android:paddingTop="@dimen/seekbar_layout_padding_top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="@dimen/seekbar_text_size"
+        android:textColor="@color/icon_pack_sub_text"
+        android:id="@id/label"
+        android:paddingTop="16.0dip"
+        android:paddingBottom="6.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Label"
+        android:textAllCaps="true"
+        android:paddingStart="16.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textSize="@dimen/seekbar_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_text"
+        android:id="@id/value"
+        android:paddingTop="16.0dip"
+        android:paddingBottom="6.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:paddingStart="12.0dip"
+        app:layout_constraintStart_toEndOf="@id/label"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textSize="@dimen/seekbar_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/seekbar_reset_text_color"
+        android:id="@id/reset"
+        android:paddingTop="16.0dip"
+        android:paddingBottom="6.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:paddingStart="6.0dip"
+        android:paddingEnd="16.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.themes.view.seekbar.CustomSeekBar
+        android:id="@id/seek_bar"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/icon_pack_seekbar_height"
+        android:paddingHorizontal="12.0dip"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        app:layout_constraintTop_toBottomOf="@id/label" />
+    <View
+        android:id="@id/divider"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</com.truelib.themes.view.seekbar.SeekbarLayout>

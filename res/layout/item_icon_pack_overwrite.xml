@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/ripple_transparent_background"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="16.0dip"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="12.0dip"
+        app:cardElevation="@dimen/dp8"
+        app:layout_constraintBottom_toTopOf="@id/icon_pack_name"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@id/image_preview"
+            android:background="@drawable/item_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@id/icon_pack_check"
+        android:visibility="gone"
+        android:layout_width="@dimen/default_mark_size"
+        android:layout_height="@dimen/default_mark_size"
+        android:src="@drawable/filled_tick"
+        app:layout_constraintBottom_toBottomOf="@id/icon_pack_name"
+        app:layout_constraintStart_toStartOf="@id/icon_pack_name"
+        app:layout_constraintTop_toTopOf="@id/icon_pack_name" />
+    <TextView
+        android:textSize="16.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_text"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/icon_pack_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:text="iOS"
+        android:maxLines="1"
+        android:lines="1"
+        app:layout_constraintBottom_toTopOf="@id/icon_pack_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:textSize="13.0dip"
+        android:textColor="@color/icon_pack_sub_text"
+        android:gravity="center"
+        android:id="@id/icon_pack_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dip"
+        android:text="Default True Launcher Pack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

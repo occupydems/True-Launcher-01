@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/top_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/icon_pack_top_bar" />
+    <FrameLayout
+        android:id="@id/main_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/preview_name"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+    <ImageView
+        android:id="@id/preview_mark"
+        android:layout_width="28.0dip"
+        android:layout_height="28.0dip"
+        android:src="@drawable/filled_tick"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/preview_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/preview_name" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="22.0dip"
+        android:textStyle="bold"
+        android:textColor="@color/icon_pack_text"
+        android:id="@id/preview_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:text="@string/ios_icon_pack"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="4.0dip"
+        android:layout_marginEnd="16.0dip"
+        app:layout_constraintBottom_toTopOf="@id/preview_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/preview_mark"
+        app:layout_goneMarginStart="16.0dip" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="15.0dip"
+        android:textColor="@color/icon_pack_sub_text"
+        android:id="@id/preview_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16.0dip"
+        android:text="@string/default_ios_launcher_pack"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@id/preview_divider" />
+    <View
+        android:id="@id/preview_divider"
+        android:background="@color/icon_pack_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginBottom="16.0dip"
+        app:layout_constraintBottom_toTopOf="@id/apply_button" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textColor="@color/icon_pack_button_color"
+        android:id="@id/edit_button"
+        android:background="@drawable/icon_pack_option_button_background"
+        android:paddingLeft="18.0dip"
+        android:paddingTop="14.0dip"
+        android:paddingRight="18.0dip"
+        android:paddingBottom="14.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:drawablePadding="6.0dip"
+        android:drawableStart="@drawable/edit"
+        android:layout_marginStart="16.0dip"
+        android:paddingHorizontal="18.0dip"
+        android:paddingVertical="14.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/apply_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/apply_button" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="17.0dip"
+        android:textColor="@color/icon_pack_button_color"
+        android:id="@id/more_button"
+        android:background="@drawable/icon_pack_option_button_background"
+        android:paddingLeft="18.0dip"
+        android:paddingTop="14.0dip"
+        android:paddingRight="18.0dip"
+        android:paddingBottom="14.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:drawablePadding="6.0dip"
+        android:drawableStart="@drawable/more"
+        android:layout_marginEnd="16.0dip"
+        android:paddingHorizontal="18.0dip"
+        android:paddingVertical="14.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/apply_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/apply_button" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/apply_button"
+        android:background="@drawable/icon_pack_button_bg"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginHorizontal="8.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/more_button"
+        app:layout_constraintStart_toEndOf="@id/edit_button"
+        app:layout_goneMarginLeft="16.0dip"
+        app:layout_goneMarginRight="16.0dip">
+        <ImageView
+            android:id="@id/watch_reward"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/ic_watch_ad"
+            android:layout_marginEnd="10.0dip" />
+        <com.truelib.common.TextViewCustomFont
+            android:textSize="17.0dip"
+            android:textColor="@color/icon_pack_button_text"
+            android:paddingTop="14.0dip"
+            android:paddingBottom="14.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:paddingVertical="14.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

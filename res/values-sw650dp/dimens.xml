@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="content_percent">0.65</item>
+    <dimen name="size_16">64.0dip</dimen>
+    <dimen name="subsc_pager_height">328.0dip</dimen>
+    <dimen name="text_size_12">16.0sp</dimen>
+</resources>

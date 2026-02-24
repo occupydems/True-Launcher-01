@@ -1,0 +1,88 @@
+.class public final Lcom/google/android/gms/internal/ads/nX;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/ZQ0;
+
+
+# instance fields
+.field private final a:Lcom/google/android/gms/internal/ads/jR0;
+
+.field private final b:Lcom/google/android/gms/internal/ads/jR0;
+
+
+# direct methods
+.method private constructor <init>(Lcom/google/android/gms/internal/ads/jR0;Lcom/google/android/gms/internal/ads/jR0;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/nX;->a:Lcom/google/android/gms/internal/ads/jR0;
+
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/nX;->b:Lcom/google/android/gms/internal/ads/jR0;
+
+    return-void
+.end method
+
+.method public static a(Lcom/google/android/gms/internal/ads/jR0;Lcom/google/android/gms/internal/ads/jR0;)Lcom/google/android/gms/internal/ads/nX;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/ads/nX;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/internal/ads/nX;-><init>(Lcom/google/android/gms/internal/ads/jR0;Lcom/google/android/gms/internal/ads/jR0;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic c()Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/nX;->a:Lcom/google/android/gms/internal/ads/jR0;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/google/android/gms/internal/ads/yX;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/yX;->a()Lcom/google/android/gms/internal/ads/wX;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/nX;->b:Lcom/google/android/gms/internal/ads/jR0;
+
+    .line 10
+    .line 11
+    check-cast v1, Lcom/google/android/gms/internal/ads/uy;
+
+    .line 12
+    .line 13
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/uy;->a()LU3/q0;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    new-instance v2, Lcom/google/android/gms/internal/ads/mX;
+
+    .line 18
+    .line 19
+    invoke-direct {v2, v0, v1}, Lcom/google/android/gms/internal/ads/mX;-><init>(Lcom/google/android/gms/internal/ads/wX;LU3/q0;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object v2
+    .line 23
+.end method

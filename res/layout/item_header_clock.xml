@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="16.0sp"
+        android:textColor="@color/clock_unselected_color"
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginBottom="@dimen/dp8"
+        app:customFont="2" />
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/clock_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+</FrameLayout>

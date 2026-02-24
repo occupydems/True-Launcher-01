@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/start_custom_background"
+    android:padding="16.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@id/container_card"
+        android:layout_width="@dimen/intro_item_tablet_width"
+        android:layout_height="fill_parent"
+        android:elevation="2.0dip"
+        app:cardBackgroundColor="#ffffffff"
+        app:cardCornerRadius="36.0dip"
+        app:cardElevation="0.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/content_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:id="@id/im_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop" />
+            <ImageView
+                android:id="@id/im_bg_2"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@id/im_res"
+                app:layout_constraintEnd_toEndOf="@id/im_res"
+                app:layout_constraintStart_toStartOf="@id/im_res"
+                app:layout_constraintTop_toTopOf="@id/im_res" />
+            <ImageView
+                android:id="@id/im_res"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginBottom="24.0dip"
+                android:layout_marginStart="24.0dip"
+                android:layout_marginEnd="8.0dip"
+                android:layout_marginVertical="24.0dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_continue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.truelib.common.TextViewCustomFont
+                android:textSize="16.0dip"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:id="@id/content"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:text="@string/onboarding_content_1"
+                app:layout_constraintBottom_toTopOf="@id/label"
+                app:layout_constraintEnd_toEndOf="@id/btn_continue"
+                app:layout_constraintStart_toStartOf="@id/btn_continue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+            <com.truelib.common.TextViewCustomFont
+                android:textSize="24.0dip"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:id="@id/label"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:text="@string/onboarding_label_1"
+                app:customFont="2"
+                app:layout_constraintBottom_toTopOf="@id/btn_continue"
+                app:layout_constraintEnd_toEndOf="@id/btn_continue"
+                app:layout_constraintStart_toStartOf="@id/btn_continue"
+                app:layout_constraintTop_toBottomOf="@id/content" />
+            <com.truelib.common.TextViewCustomFont
+                android:textSize="16.75dip"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@id/btn_continue"
+                android:background="@drawable/bg_continue_on_boarding"
+                android:paddingTop="14.0dip"
+                android:paddingBottom="14.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24.0dip"
+                android:text="@string/continue_text"
+                android:includeFontPadding="false"
+                android:layout_marginStart="8.0dip"
+                android:layout_marginEnd="24.0dip"
+                android:elevation="8.0dip"
+                android:paddingVertical="14.0dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im_res"
+                app:layout_constraintTop_toBottomOf="@id/label" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

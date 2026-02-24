@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4.0dip"
+    android:layout_marginBottom="16.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="18.5dip"
+        android:textColor="@color/theme_text_primary"
+        android:ellipsize="end"
+        android:id="@id/category"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="4.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="4.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginBottom="4.0dip"
+        android:foreground="@drawable/ripple_transparent_background"
+        android:maxLines="1"
+        android:lines="1"
+        android:drawablePadding="8.0dip"
+        android:drawableEnd="@drawable/ic_theme_arrow_right"
+        android:layout_marginHorizontal="4.0dip"
+        android:paddingHorizontal="12.0dip"
+        android:paddingVertical="4.0dip"
+        app:customFont="2" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/list_items"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12.0dip" />
+</LinearLayout>

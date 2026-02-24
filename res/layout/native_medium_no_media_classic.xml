@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/ad_call_to_action">
+            <androidx.cardview.widget.CardView
+                android:id="@id/card_app_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                app:cardCornerRadius="8.929993dip">
+                <ImageView
+                    android:id="@id/ad_app_icon"
+                    android:layout_width="68.0dip"
+                    android:layout_height="68.0dip"
+                    android:adjustViewBounds="true" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8.0dip">
+                <TextView
+                    android:layout_marginTop="-2.0dip"
+                    android:layout_marginEnd="4.0dip"
+                    style="@style/AdsMaInline" />
+                <TextView
+                    android:textSize="16.75dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:id="@id/ad_headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2" />
+            </LinearLayout>
+            <TextView
+                android:textSize="12.5dip"
+                android:textColor="#993c3c43"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/ad_body"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:paddingHorizontal="8.0dip" />
+        </LinearLayout>
+        <TextView
+            android:textSize="17.0dip"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/ad_call_to_action"
+            android:background="@drawable/bg_native_button_small_radius"
+            android:paddingLeft="12.0dip"
+            android:paddingTop="14.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingBottom="14.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:backgroundTint="#ff03855d"
+            android:layout_marginHorizontal="8.0dip"
+            android:paddingHorizontal="12.0dip"
+            android:paddingVertical="14.0dip" />
+    </RelativeLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

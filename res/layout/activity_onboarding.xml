@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/start_custom_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            app:layout_constraintBottom_toTopOf="@id/ll_tab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout
+            android:gravity="center"
+            android:id="@id/ll_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.0dip"
+            app:layout_constraintBottom_toTopOf="@id/ads_frame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewPager">
+            <com.google.android.material.tabs.TabLayout
+                android:layout_gravity="center"
+                android:id="@id/tabLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="8.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginHorizontal="2.0dip"
+                android:layout_marginVertical="2.0dip"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="0.0dip"
+                app:tabMaxWidth="0.0dip"
+                app:tabMode="fixed"
+                app:tabRippleColor="@android:color/transparent" />
+        </FrameLayout>
+        <View
+            android:id="@id/divider"
+            android:background="@color/onboarding_divider_background"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/onboarding_divider_height"
+            app:layout_constraintBottom_toTopOf="@id/ads_frame" />
+        <FrameLayout
+            android:id="@id/ads_frame"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/onboarding_native_padding_horizontal"
+            android:paddingRight="@dimen/onboarding_native_padding_horizontal"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:paddingHorizontal="@dimen/onboarding_native_padding_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:id="@id/loading_view"
+        android:background="#4d000000"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/progress_item"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:src="@drawable/ic_ios_spinner_white" />
+    </FrameLayout>
+</FrameLayout>

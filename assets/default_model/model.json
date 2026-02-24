@@ -1,0 +1,4954 @@
+[
+  {
+    "id": 6039,
+    "name": "Metal Button",
+    "style": "ADAPTIVE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -3963577,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.07,
+        "offsetX": 0.03,
+        "offsetY": 0.03,
+        "color": -16777216,
+        "opacity": 0.8
+      },
+      "scale": 1,
+      "strokeWidth": 0.05,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.08,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -16777216,
+        "opacity": 0.87
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -13312,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 1,
+        "angle": 45,
+        "color": -16777216,
+        "opacity": 0.5
+      }
+    },
+    "ambient": {
+      "angle": 135,
+      "radius": 0.61,
+      "intensity": 0.61,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729246464833,
+    "overlay": {
+      "texture": "T7",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.32,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/561aa0bac9c39a87307a9289ec34ed57.jpg"
+  },
+  {
+    "id": 6054,
+    "name": "Simple Love",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -35672,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -4771228,
+        "color2": 0,
+        "opacity": 0.29,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.11,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.17,
+        "offsetX": 0,
+        "offsetY": -0.08,
+        "color": -5357733,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.28,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/ebca30ed8316826713624c440c272205.jpg"
+  },
+  {
+    "id": 6053,
+    "name": "Love 💖",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -50384,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -2808025,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.07,
+        "offsetX": 0,
+        "offsetY": 0.05,
+        "color": -9954816,
+        "opacity": 0.66
+      },
+      "scale": 1,
+      "strokeWidth": 0.06,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.59,
+        "offsetX": -0.01,
+        "offsetY": -0.16,
+        "color": -8513769,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.33,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T4",
+      "scale": 1.5,
+      "rotation": 0,
+      "opacity": 0.34,
+      "color": -41658
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/9e061ee182e11b1a917f4cc7aecfdc14.jpg"
+  },
+  {
+    "id": 6052,
+    "name": "💕 Heart",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -29784,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -17973,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.06,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.23,
+        "offsetX": 0,
+        "offsetY": -0.08,
+        "color": -1425280,
+        "opacity": 0.59
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.35,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/086faba73a5d9197ef7a2eeb4288749f.jpg"
+  },
+  {
+    "id": 6051,
+    "name": "❤ Love ❤",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.08,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -50384,
+        "opacity": 0.45
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.11,
+        "offsetX": -0.03,
+        "offsetY": -0.09,
+        "color": -50384,
+        "opacity": 0.27
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -50384,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.28,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/f399459565fa0b3e9d16e1ae1d32889b.jpg"
+  },
+  {
+    "id": 6050,
+    "name": "Wolf Moon",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -11661810,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -50384,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.04,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -50384,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.05,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.32,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T3",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "color": -50384
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/61120b1315eabfbe0d3c6028e5bc9075.jpg"
+  },
+  {
+    "id": 6049,
+    "name": "Cute Halloween",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -7720332,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.53,
+        "offsetX": 0,
+        "offsetY": 0.75,
+        "color": -810241,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -5287202,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.27,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0.09,
+        "angle": 0,
+        "color": -5287202,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T3",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.68,
+      "color": -6536006
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/063c7d10900051d89bb024b23e9705b0.jpg"
+  },
+  {
+    "id": 6048,
+    "name": "Green Girl",
+    "style": "SIMPLE",
+    "rotateHorizontally": -6,
+    "rotateVertically": 9,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -13318311,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.11,
+        "offsetX": 0,
+        "offsetY": 0.07,
+        "color": -16777216,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.02,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.47,
+        "offsetX": 0,
+        "offsetY": 0.75,
+        "color": -13318311,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/edf76675f78ca1aaa5758a6345b69bf8.jpg"
+  },
+  {
+    "id": 6047,
+    "name": "Witch",
+    "style": "SIMPLE",
+    "rotateHorizontally": 11,
+    "rotateVertically": 18,
+    "background": {
+      "fill": {
+        "color1": -32768,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -8118618,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.54,
+        "offsetX": 0,
+        "offsetY": 0.57,
+        "color": -2228002,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.22,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0.17,
+        "angle": 0,
+        "color": -5879611,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/50c4e8f66d6ab506a2a36523c279d617.jpg"
+  },
+  {
+    "id": 6046,
+    "name": "Wolf Red",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -50384,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.12,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -50384,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -50384,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.23,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T2",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.37,
+      "color": -27392
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/69c9f4478d60cd7d964fbd78dea17fa5.jpg"
+  },
+  {
+    "id": 6045,
+    "name": "Moon Halloween",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -65281,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -4634881,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.05,
+        "offsetX": 0,
+        "offsetY": 0.07,
+        "color": -12055955,
+        "opacity": 0.59
+      },
+      "scale": 1,
+      "strokeWidth": 0.08,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.4,
+        "offsetX": 0.06,
+        "offsetY": 0.75,
+        "color": -9162102,
+        "opacity": 0.96
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.22,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T2",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.13,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/f7a5506b49bd82501ada79ff76587aee.jpg"
+  },
+  {
+    "id": 6044,
+    "name": "Castle",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -27392,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.12,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -37353,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -37353,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.23,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T2",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.37,
+      "color": -27392
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/12e3b8a440cbcc12a76eb356fb243d24.jpg"
+  },
+  {
+    "id": 6043,
+    "name": "Wave",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -37353,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -7912448,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.07,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.17,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -13312,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.33,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0.1,
+      "intensity": 0.26,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T9",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.51,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/0ecd4535667979ecad0e8c73f80bba9c.jpg"
+  },
+  {
+    "id": 6042,
+    "name": "ghost cyan",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -9582649,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16738923,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.05,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.45,
+        "offsetX": -0.2,
+        "offsetY": -0.72,
+        "color": -1,
+        "opacity": 0
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.24,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T2",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.17,
+      "color": -16750745
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/c8ee660a56e91eaca2e72de3f8a36c26.jpg"
+  },
+  {
+    "id": 6041,
+    "name": "Cat Pumpkin",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -37353,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0.71,
+        "offsetX": 0.05,
+        "offsetY": 0.92,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.26,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T2",
+      "scale": 1.16,
+      "rotation": 0,
+      "opacity": 0.12,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/6df777df2e7c7051671f316421566e72.jpg"
+  },
+  {
+    "id": 6040,
+    "name": "Halloween Pattern",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -37353,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "SAMSUNG",
+      "rotate": 0,
+      "innerShadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      }
+    },
+    "foreground": {
+      "fill": {
+        "color1": -37353,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.2,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3,
+      "longShadow": {
+        "radius": 0,
+        "angle": 0,
+        "color": -16777216,
+        "opacity": 1
+      }
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1729245916809,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1729153071_28\/2aa28a534a7e785345eb815cb5ca23f8.jpg"
+  },
+  {
+    "id": 5037,
+    "name": "Verte Green",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -7754674,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.38,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728639511452,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/c5b23d7b73e3506e37c577bf8a75d6cf.jpg"
+  },
+  {
+    "id": 5036,
+    "name": "Pink In Black",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16711680,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -715102,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.38,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728638891831,
+    "overlay": {
+      "texture": "T3",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "color": -715103
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/724d47c99b80aa1159a5cbc773201725.jpg"
+  },
+  {
+    "id": 5035,
+    "name": "Minimal Aesthetic",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -9147339,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.38,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728638508336,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/fa3981eef09a06617cd56d7da7958c98.jpg"
+  },
+  {
+    "id": 5034,
+    "name": "Dark Red Matte Black",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -14277082,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -4513246,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.38,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728638066927,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/15cd40d217e9ca3a35e3ab42c735abb1.jpg"
+  },
+  {
+    "id": 5033,
+    "name": "Red On Black",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16711680,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -917504,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.38,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728637740117,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/ec73540fbe53711ae31673210043c3dd.jpg"
+  },
+  {
+    "id": 5032,
+    "name": "Neutral White on Beige",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -2507875,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.38,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728637342769,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/84049fce624a363501eeb68a0edf203a.jpg"
+  },
+  {
+    "id": 4028,
+    "name": "Pink Pine Tree",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -41595,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -2601103,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0.29,
+        "offsetY": 0.08,
+        "color": -8117152,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.06,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -14086379,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.48,
+      "strokeWidth": 0,
+      "rotate": 21,
+      "offsetX": 0.02,
+      "offsetY": -0.02,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728636250529,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1.09,
+      "rotation": -64,
+      "opacity": 0.69,
+      "color": -5901
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_28\/55eb8c6f27db819c595d12c3565cd827.jpg"
+  },
+  {
+    "id": 4032,
+    "name": "Glitter Girl",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16745729,
+        "color2": 0,
+        "opacity": 0.53,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0.19,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.08,
+        "offsetX": 0,
+        "offsetY": 0.04,
+        "color": -16777216,
+        "opacity": 0.12
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "SAMSUNG",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": 92,
+      "radius": 0.78,
+      "intensity": 0.51,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0.16
+    },
+    "updatedTime": 1728636210769,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.19,
+      "color": -16745729
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_28\/f8fbefc14824c0c2d42a585ea9afd40a.jpg"
+  },
+  {
+    "id": 4033,
+    "name": "Trick & Treat",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0.2,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.04,
+        "offsetX": 0,
+        "offsetY": 0.05,
+        "color": -16777216,
+        "opacity": 0.6
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -37353,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.46,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": 0,
+      "radius": 0.4,
+      "intensity": 0.42,
+      "type": "LINEAR"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728636175995,
+    "overlay": {
+      "texture": "T2",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.2,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_28\/ba29037e40acc6a857a64cbbce35d346.jpg"
+  },
+  {
+    "id": 4029,
+    "name": "Mountain Dark",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -2601103,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0.29,
+        "offsetY": 0.08,
+        "color": -8117152,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -16711681,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.48,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728636137950,
+    "overlay": {
+      "texture": "T8",
+      "scale": 1.09,
+      "rotation": -64,
+      "opacity": 0.69,
+      "color": -5901
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_28\/853c9df7afe2ca135785fa0865ceb33a.jpg"
+  },
+  {
+    "id": 4031,
+    "name": "Miami",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -11918809,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0.19,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.08,
+        "offsetX": 0,
+        "offsetY": 0.04,
+        "color": -16777216,
+        "opacity": 0.12
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -29813,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.21,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728636082811,
+    "overlay": {
+      "texture": "T3",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -50384
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_28\/b4565d919c8c79d3b64f74dccec46cf1.jpg"
+  },
+  {
+    "id": 4034,
+    "name": "Green Metal",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -13318311,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.11,
+        "offsetX": 0,
+        "offsetY": 0.03,
+        "color": -15237583,
+        "opacity": 0.53
+      },
+      "scale": 1,
+      "strokeWidth": 0.03,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -12517632,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.48,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0.01,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728633472343,
+    "overlay": {
+      "texture": "T7",
+      "scale": 1,
+      "rotation": -64,
+      "opacity": 1,
+      "color": -13318311
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/4b3d0a66c4ffe2d09cf17be23b21d6b0.jpg"
+  },
+  {
+    "id": 3029,
+    "name": "All In",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "opacity": 0.1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -1,
+        "opacity": 0.09
+      },
+      "scale": 1,
+      "strokeWidth": 0.06,
+      "radius": 1,
+      "shape": "SQUARE",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -4653056,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -116,
+      "radius": 0.28,
+      "intensity": 0.34,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728621516123,
+    "overlay": {
+      "texture": "T7",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.02,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/87be04fa0cc7b1c25681744ce9450e4b.jpg"
+  },
+  {
+    "id": 3028,
+    "name": "Carbon Black",
+    "style": "ADAPTIVE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16776438,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16445413,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -1,
+        "opacity": 0.09
+      },
+      "scale": 1,
+      "strokeWidth": 0.06,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -116,
+      "radius": 0.28,
+      "intensity": 0.34,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728621378578,
+    "overlay": {
+      "texture": "T7",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.04,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/4929cbbe7950bfdbcfdcadd879910126.jpg"
+  },
+  {
+    "id": 3031,
+    "name": "Dream Wrld",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -11789,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -41554,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.09,
+        "offsetX": 0,
+        "offsetY": 0.03,
+        "color": -3852657,
+        "opacity": 0.28
+      },
+      "scale": 1,
+      "strokeWidth": 0.1,
+      "radius": 1,
+      "shape": "SAMSUNG",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -47477,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -180,
+      "radius": 0,
+      "intensity": 0,
+      "type": "LINEAR"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728620151294,
+    "overlay": {
+      "texture": "T4",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.51,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/6cd0b8a8e71d7660d3985032947fa89d.jpg"
+  },
+  {
+    "id": 3030,
+    "name": "Pastel Noise",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -2197051,
+        "opacity": 0.66,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "opacity": 0.45,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -5287202,
+        "opacity": 0
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -128,
+      "radius": 0.63,
+      "intensity": 0.46,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728618988668,
+    "overlay": {
+      "texture": "T8",
+      "scale": 1,
+      "rotation": -48,
+      "opacity": 0.32,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/53ebfa518833a47f859e93ff38ae193a.jpg"
+  },
+  {
+    "id": 2027,
+    "name": "Winter Street",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -15261397,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0.19,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.08,
+        "offsetX": 0,
+        "offsetY": 0.04,
+        "color": -16777216,
+        "opacity": 0.12
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "SAMSUNG",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": 92,
+      "radius": 0.78,
+      "intensity": 0.51,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0.16
+    },
+    "updatedTime": 1728529272561,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.19,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/4b3c86daaba5438df6c5b796b730f3b0.png"
+  },
+  {
+    "id": 2026,
+    "name": "Snow Globe",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16758125,
+        "color2": 0,
+        "opacity": 0.7,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0.19,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": 92,
+      "radius": 0.4,
+      "intensity": 0.42,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0.16
+    },
+    "updatedTime": 1728529247009,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.19,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/c56b809b60b970761f0358de0e657552.png"
+  },
+  {
+    "id": 2025,
+    "name": "Jade Buddha",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16761025,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -15051169,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.06,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -16640,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -105,
+      "radius": 0.55,
+      "intensity": 0.24,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.46,
+      "intensity": 0.17
+    },
+    "updatedTime": 1728529083908,
+    "overlay": {
+      "texture": "T3",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.33,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/ae7c977d1f1f6e8f3d473cc0b412473f.jpg"
+  },
+  {
+    "id": 2024,
+    "name": "Golden Buddha",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -4551936,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.03,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -16640,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -105,
+      "radius": 0.55,
+      "intensity": 0.24,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728529061361,
+    "overlay": {
+      "texture": "T15",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.13,
+      "color": -13312
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/3bffd3a9907325e86f50e689f9c6be44.jpg"
+  },
+  {
+    "id": 2022,
+    "name": "Sakura Kitty",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -11802,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.06,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -35707,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728529026116,
+    "overlay": {
+      "texture": "T12",
+      "scale": 1.3,
+      "rotation": 0,
+      "opacity": 0.5,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/5a623460d8135f10011abff19e36eb16.jpg"
+  },
+  {
+    "id": 2021,
+    "name": "The Map",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16774121,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.08,
+        "offsetX": 0,
+        "offsetY": 0.06,
+        "color": -16777216,
+        "opacity": 0.21
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728529004573,
+    "overlay": {
+      "texture": "T14",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.18,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/9ca72f54d02209ff4f5f2f1202fbbedd.jpg"
+  },
+  {
+    "id": 2020,
+    "name": "Halloween Purple",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -12050602,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -5287202,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.08,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -5287202,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728528972709,
+    "overlay": {
+      "texture": "T3",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.3,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/acad13c910c41dc61396e86c0e558f14.jpg"
+  },
+  {
+    "id": 2019,
+    "name": "Halloween Web",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -5144272,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.08,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1728528944084,
+    "overlay": {
+      "texture": "T5",
+      "scale": 1.28,
+      "rotation": 0,
+      "opacity": 0.44,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/f41f2482cf651be7f4677f0fe4ee13f4.jpg"
+  },
+  {
+    "id": 1018,
+    "name": "Black Pumpkin",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0.2,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.04,
+        "offsetX": 0,
+        "offsetY": 0.05,
+        "color": -16777216,
+        "opacity": 0.6
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1866199,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": 0,
+      "radius": 0.4,
+      "intensity": 0.42,
+      "type": "LINEAR"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T2",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.2,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/6e58e2942973541068269820ce6d38fc.jpg"
+  },
+  {
+    "id": 1017,
+    "name": "Cat and Pumpkin",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -2860013,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.05,
+        "offsetX": 0,
+        "offsetY": 0.04,
+        "color": -16777216,
+        "opacity": 0.6
+      },
+      "scale": 1,
+      "strokeWidth": 0.02,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -90,
+      "radius": 0.55,
+      "intensity": 0.6,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/c19c79bfe786e41690616eab7d21e791.jpg"
+  },
+  {
+    "id": 1003,
+    "name": "Lovely",
+    "style": "ADAPTIVE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -23867,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.04,
+        "offsetX": 0.04,
+        "offsetY": 0.04,
+        "color": -16777216,
+        "opacity": 0.5
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -35672,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -90,
+      "radius": 0.4,
+      "intensity": 0.6,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0.18
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/0957e09e0b24e97d99f0c22aa1287af8.jpg"
+  },
+  {
+    "id": 1002,
+    "name": "Star Dream",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -90,
+      "radius": 0.4,
+      "intensity": 0.6,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T9",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.7,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/2f22ce468a4765743e72b00273302b4e.jpg"
+  },
+  {
+    "id": 1001,
+    "name": "Simple nature",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -3023617,
+        "color2": 0,
+        "opacity": 0.5,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.04,
+        "offsetX": 0,
+        "offsetY": 0.04,
+        "color": -16777216,
+        "opacity": 0.5
+      },
+      "scale": 1,
+      "strokeWidth": 0.05,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -3023617,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1.12,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -90,
+      "radius": 0.4,
+      "intensity": 0.6,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T5",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0.5,
+      "color": -1
+    },
+    "wallpaper": "https:\/\/cdn-app.arsfan.site\/\/demo_1727669711_27\/70f7b9430780396d97cbfcf7f450f6f5.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Blossom",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -20046,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -13335924,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 14,
+    "name": "Green Night",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16114406,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -13313151,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 13,
+    "name": "Crystal",
+    "style": "NON_ADAPTIVE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -1286,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.03,
+        "offsetX": -0.04,
+        "offsetY": 0.04,
+        "color": -14876672,
+        "opacity": 0.4
+      },
+      "scale": 1,
+      "strokeWidth": 0.01,
+      "radius": 0.7,
+      "shape": "SAMSUNG",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -150,
+      "radius": 0.59,
+      "intensity": 0.75,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": 0,
+      "radius": -0.3,
+      "intensity": 0.47
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 12,
+    "name": "Spin",
+    "style": "NON_ADAPTIVE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -16512739,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -262145,
+        "color2": 0,
+        "opacity": 0.5,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.05,
+      "radius": 0.7,
+      "shape": "SAMSUNG",
+      "rotate": 25
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": 65,
+      "radius": 0.7,
+      "intensity": 0.3,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 11,
+    "name": "Obsidian",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -15531747,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.04,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -263425,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 0.7,
+      "shape": "SAMSUNG",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 10,
+    "name": "Depth",
+    "style": "ADAPTIVE",
+    "rotateHorizontally": 25,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.06,
+        "offsetX": -0.08,
+        "offsetY": 0.08,
+        "color": -16645091,
+        "opacity": 0.6
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "SQUARE",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": 0,
+      "radius": 0.7,
+      "intensity": 0.7,
+      "type": "LINEAR"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 9,
+    "name": "Extra Bold",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -262401,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -16711395,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 8,
+    "name": "Sphere",
+    "style": "ADAPTIVE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.06,
+        "offsetX": -0.04,
+        "offsetY": 0.05,
+        "color": -16380899,
+        "opacity": 0.5
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -130,
+      "radius": 0.6,
+      "intensity": 0.7,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 7,
+    "name": "Vivid",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0.2,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.01,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -263425,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 6,
+    "name": "Textual",
+    "style": "TEXTURE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 0.5,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.04,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 0.7,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 7
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 5,
+    "name": "BorderFlex",
+    "style": "ADAPTIVE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -263425,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.07,
+      "radius": 1,
+      "shape": "SAMSUNG",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 4,
+    "name": "Minimal Black",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1286,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.05,
+        "offsetX": 0.04,
+        "offsetY": 0.04,
+        "color": -16187107,
+        "opacity": 0.7
+      },
+      "scale": 1,
+      "strokeWidth": 0.05,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -16446691,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 3,
+    "name": "CircleFlex",
+    "style": "ADAPTIVE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "OVAL",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 2,
+    "name": "Glossy Icon",
+    "style": "NON_ADAPTIVE",
+    "rotateHorizontally": 5,
+    "rotateVertically": 20,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16579570,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0.15,
+        "offsetX": 0,
+        "offsetY": 0.07,
+        "color": -16579570,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0.07,
+      "radius": 1,
+      "shape": "IOS",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 0.74,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0.37
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  },
+  {
+    "id": 1,
+    "name": "Simplicity Color",
+    "style": "SIMPLE",
+    "rotateHorizontally": 0,
+    "rotateVertically": 0,
+    "background": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "radius": 1,
+      "shape": "SAMSUNG",
+      "rotate": 0
+    },
+    "foreground": {
+      "fill": {
+        "color1": -1,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "FIXED_COLOR"
+      },
+      "stroke": {
+        "color1": -16777216,
+        "color2": 0,
+        "opacity": 1,
+        "colorType": "APP_COLOR"
+      },
+      "shadow": {
+        "radius": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "color": -7829368,
+        "opacity": 1
+      },
+      "scale": 1,
+      "strokeWidth": 0,
+      "rotate": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "maxLetters": 3
+    },
+    "ambient": {
+      "angle": -45,
+      "radius": 0,
+      "intensity": 0,
+      "type": "RADIO"
+    },
+    "glossyLight": {
+      "angle": -45,
+      "radius": -0.5,
+      "intensity": 0
+    },
+    "updatedTime": 1727752300455,
+    "overlay": {
+      "texture": "T1",
+      "scale": 1,
+      "rotation": 0,
+      "opacity": 0,
+      "color": -16777216
+    },
+    "wallpaper": ""
+  }
+]

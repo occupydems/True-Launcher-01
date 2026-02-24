@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@id/clock_widget"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_item"
+    android:layout_marginEnd="@dimen/margin_item"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/icon_lock"
+        android:layout_width="@dimen/lock_icon_size"
+        android:layout_height="@dimen/lock_icon_size"
+        android:layout_marginTop="@dimen/time_margin_top"
+        android:src="@drawable/ic_lock_preview" />
+    <com.truelib.settings.custom.TextCustomFont
+        android:textSize="@dimen/default_date_size"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip" />
+    <com.truelib.settings.wallpaper.view.ClockTextView
+        android:textSize="@dimen/default_clock_size"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@id/timing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/time_margin_top" />
+</LinearLayout>

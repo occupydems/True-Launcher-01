@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#80000000"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/delete_button"
+        android:layout_width="@dimen/remove_button_size"
+        android:layout_height="@dimen/remove_button_size"
+        android:src="@drawable/delete_circle_icon"
+        android:translationX="-64.0dip"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="48.0dip"
+        android:textColor="@color/clock_main_text_color"
+        android:id="@id/hour_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dip"
+        android:layout_marginStart="16.0dip"
+        app:customFont="1"
+        app:layout_constraintBottom_toTopOf="@id/label_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="13.0dip"
+        android:textColor="@color/clock_sub_text_color"
+        android:id="@id/label_text"
+        android:layout_width="@dimen/alarm_item_label_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hour_text" />
+    <com.truelib.common.view.IOSSwitchView
+        android:id="@id/enabled_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/next_button"
+        android:layout_width="@dimen/remove_button_size"
+        android:layout_height="@dimen/remove_button_size"
+        android:src="@drawable/clock_next_icon"
+        android:translationX="64.0dip"
+        android:layout_marginEnd="@dimen/dp16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/divider"
+        android:background="@color/clock_divider_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginStart="16.0dip"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <View
+        android:id="@id/delete_swipe"
+        android:background="@color/red_color"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.truelib.common.TextViewCustomFont
+        android:textSize="13.0dip"
+        android:textColor="@color/clock_main_text_color"
+        android:id="@id/delete_text"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:paddingHorizontal="12.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
