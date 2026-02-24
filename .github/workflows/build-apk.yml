@@ -76,14 +76,19 @@ jobs:
           ${ANDROID_BUILD_TOOLS}/zipalign -v 4 /tmp/True_Launcher_3-unsigned.apk /tmp/True_Launcher_3-aligned.apk
 
       - name: Decode keystore and sign APK
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > /tmp/release.keystore
+          echo "${KEYSTORE_BASE64}" | base64 -d > /tmp/release.keystore
 
           ${ANDROID_BUILD_TOOLS}/apksigner sign \
             --ks /tmp/release.keystore \
-            --ks-key-alias ${{ secrets.KEY_ALIAS }} \
-            --ks-pass pass:${{ secrets.KEYSTORE_PASSWORD }} \
-            --key-pass pass:${{ secrets.KEY_PASSWORD }} \
+            --ks-key-alias "${KEY_ALIAS}" \
+            --ks-pass "pass:${KEYSTORE_PASSWORD}" \
+            --key-pass "pass:${KEY_PASSWORD}" \
             --out /tmp/True_Launcher_3.apk \
             /tmp/True_Launcher_3-aligned.apk
 
